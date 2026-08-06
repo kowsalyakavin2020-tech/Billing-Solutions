@@ -80,6 +80,10 @@
   .phr-grid{ grid-template-columns:1fr; gap:40px; }
   .phr-media{ order:-1; max-width:320px; margin:0 auto; }
 }
+@media (max-width:480px){
+  .plans-hero-rich{ padding:130px 0 40px; }
+  .phr-media{ max-width:260px; }
+}
 /* ---- Plan configurator ---- */
 .configurator{background:var(--ink-3);border:1px solid var(--line-2);border-radius:24px;padding:50px;display:grid;grid-template-columns:1fr 320px;gap:50px;align-items:center;}
 .config-left h3{font-size:22px;margin-bottom:24px;}
@@ -554,11 +558,22 @@
   .c-photo{ width:90px !important; height:110px !important; }
 }
 @media (max-width:600px){
-  .c-photo{ display:none; }
-  .collage-grid{ height:auto; padding:60px 0; }
+  .collage-hero-section{ padding:120px 0 60px; min-height:auto; }
+  .collage-grid{ height:480px; }
+
+  .cp1{ top:0; left:2%; width:70px; height:90px; }
+  .cp2{ top:1%; left:32%; width:80px; height:100px; }
+  .cp3{ top:12%; left:64%; width:65px; height:78px; }
+  .cp4{ top:0; right:2%; width:70px; height:90px; }
+  .cp5{ display:none; }
+  .cp6{ top:32%; left:0; width:65px; height:82px; }
+  .cp7{ bottom:2%; left:24%; width:70px; height:90px; }
+  .cp8{ bottom:0; right:4%; width:75px; height:95px; }
+
   .collage-center{
-    position:static;
-    transform:none;
-    max-width:100%;
+    max-width:280px;
+  }
+  .collage-center h1{
+    font-size:24px;
   }
 }
