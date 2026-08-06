@@ -686,6 +686,8 @@
   font-family:var(--font-mono);
   letter-spacing:.02em;
   transition:color .35s var(--ease);
+  text-align:center;
+  word-break:break-word;
 }
 
 .pt-card:hover{
