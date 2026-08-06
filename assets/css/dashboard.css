@@ -3,7 +3,7 @@ html, body{overflow-x:hidden;max-width:100%;}
 .dash-wrap{display:flex;min-height:100vh;max-width:100%;overflow-x:hidden;}
 .dash-sidebar{width:266px;flex-shrink:0;background:var(--ink-2);border-right:1px solid var(--line);display:flex;flex-direction:column;padding:24px 18px;position:fixed;top:0;bottom:0;left:0;z-index:200;transition:transform .4s var(--ease);}
 .dash-sidebar .brand{padding:10px 10px 26px;}
-.dash-sidebar .brand img{width:auto;height:24px;}
+.dash-sidebar .brand img{width:auto;height:34px;}
 .dash-sidebar-top{display:flex;align-items:center;justify-content:space-between;padding:10px 10px 26px;}
 .dash-sidebar-top .brand{padding:0;}
 .dash-sidebar-close{display:none;background:none;border:0;color:var(--paper-dim);font-size:20px;cursor:pointer;}

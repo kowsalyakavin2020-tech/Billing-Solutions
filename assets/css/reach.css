@@ -2,7 +2,10 @@
 .section{padding:120px 0;}
 .section-alt{background:var(--ink-2);}
 .section-head.center{text-align:center;margin:0 auto 56px;}
-.reach-hero{padding:170px 0 50px;}
+section.reach-hero{
+  padding-top:170px !important;
+  padding-bottom:50px !important;
+}
 .reach-hero h1{font-size:clamp(36px,5.6vw,58px);}
 .reach-hero p{color:var(--paper-dim);max-width:600px;margin-top:16px;font-size:17px;}
 

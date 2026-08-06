@@ -18,23 +18,7 @@
 })();
 
 
-/* ---- Drag-to-scroll gallery ---- */
-(() => {
-  const gallery = document.querySelector(".drag-gallery");
-  if (!gallery) return;
-  let isDown = false, startX, scrollLeft;
-  gallery.addEventListener("mousedown", (e) => {
-    isDown = true; gallery.classList.add("dragging");
-    startX = e.pageX - gallery.offsetLeft; scrollLeft = gallery.scrollLeft;
-  });
-  ["mouseleave", "mouseup"].forEach(evt => gallery.addEventListener(evt, () => { isDown = false; gallery.classList.remove("dragging"); }));
-  gallery.addEventListener("mousemove", (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - gallery.offsetLeft;
-    gallery.scrollLeft = scrollLeft - (x - startX) * 1.5;
-  });
-})();
+
 
 /* ---- Live spotlight: auto-rotating big stat ---- */
 (() => {

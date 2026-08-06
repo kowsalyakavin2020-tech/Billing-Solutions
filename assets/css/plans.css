@@ -3,7 +3,11 @@
 .section-alt{background:var(--ink-2);}
 .section-head.center{text-align:center;margin:0 auto 56px;}
 /* ---------- HERO — RICH WITH PREVIEW ---------- */
-.plans-hero-rich{ padding:170px 0 70px; overflow:hidden; }
+section.plans-hero-rich{
+  padding-top:170px !important;
+  padding-bottom:70px !important;
+  overflow:hidden;
+}
 
 .phr-grid{
   display:grid;

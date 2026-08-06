@@ -70,10 +70,7 @@ function safeToast(msg, type) {
       markError(password?.closest(".rl-field"), true);
       valid = false;
     }
-    if (!remember || !remember.checked) {
-      markError(document.getElementById("rememberField"), true);
-      valid = false;
-    }
+    
 
     if (!valid) {
       if (remember && !remember.checked && email && AUTH_EMAIL_RE.test(email.value.trim()) && password && STRONG_PW_RE.test(password.value)) {
