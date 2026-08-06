@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stackly — Invoicing, Payments &amp; Recurring Billing That Runs Itself</title>
+<meta name="description" content="Stackly turns invoicing, checkout and recurring billing into one automated revenue system for freelancers, agencies and finance teams.">
+<meta name="keywords" content="stackly, billing software, invoicing platform, recurring billing, payment gateway">
+<link rel="icon" href="assets/images/stackly-logo-cyan.webp">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/home.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="loader">
+    <img src="assets/images/stackly-logo-cyan.webp" alt="Stackly">
+    <div class="loader-ring"></div>
+    <p>Loading, please wait...</p>
+  </div>
+
+
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand"><img src="assets/images/stackly-logo-cyan.webp" alt="Stackly logo"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="story.html">Story</a></li>
+      <li>
+        <a href="platform.html">Platform <i class="fa-solid fa-chevron-down"></i></a>
+        <ul class="dropdown">
+          <li><a href="platform.html#invoicing"><i class="fa-solid fa-file-invoice"></i> Invoicing</a></li>
+          <li><a href="platform.html#payments"><i class="fa-solid fa-credit-card"></i> Payments</a></li>
+          <li><a href="platform.html#recurring"><i class="fa-solid fa-rotate"></i> Recurring Billing</a></li>
+          <li><a href="platform.html#insights"><i class="fa-solid fa-chart-pie"></i> Insights</a></li>
+        </ul>
+      </li>
+      <li><a href="plans.html">Plans</a></li>
+      <li><a href="reach-us.html">Reach Us</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="signin.html" class="btn btn-ghost btn-sm">Sign In</a>
+      <a href="get-access.html" class="btn btn-primary btn-sm">Get Access</a>
+    </div>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<nav class="mobile-menu">
+  <div class="mm-top">
+    <a href="index.html" class="brand"><img src="assets/images/stackly-logo-cyan.webp" alt="Stackly logo"></a>
+    <button class="mm-close" id="mobileMenuClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <a href="index.html">Home</a>
+  <a href="story.html">Story</a>
+  <div class="has-sub">
+    <a href="#">Platform <i class="fa-solid fa-chevron-down"></i></a>
+    <div class="sub-list">
+      <a href="platform.html#invoicing">Invoicing</a>
+      <a href="platform.html#payments">Payments</a>
+      <a href="platform.html#recurring">Recurring Billing</a>
+      <a href="platform.html#insights">Insights</a>
+    </div>
+  </div>
+  <a href="plans.html">Plans</a>
+  <a href="reach-us.html">Reach Us</a>
+  <div class="mobile-menu-actions">
+    <a href="signin.html" class="btn btn-ghost btn-block">Sign In</a>
+    <a href="get-access.html" class="btn btn-primary btn-block">Get Access</a>
+  </div>
+</nav>
+
+
+<main>
+
+<!-- 1. HERO -->
+<section class="home-hero">
+  <div class="hero-photo-bg">
+    <img src="assets/images/mobile-pos-payment-retail.webp" alt="Founder working on Stackly invoicing platform">
+  </div>
+  <div class="container hero-photo-content">
+    <div class="eyebrow" data-aos="fade-up">STACKLY AI BILLING PLATFORM</div>
+    <h1 class="hero-type-heading">
+  The only tool<br>
+  you need to<br>
+  <span class="grad-text">automate billing.</span>
+</h1>
+    <div class="hero-cta" data-aos="fade-up" data-aos-delay="220">
+      <a href="404.html" class="btn btn-primary">Get started for free</a>
+      <a href="404.html" class="btn btn-outline-white">Request a demo</a>
+    </div>
+  </div>
+  
+</section>
+
+<!-- 2. DIAGONAL PAYMENT MARQUEE -->
+<section class="diag-marquee">
+  <div class="diag-strip">
+    <div class="diag-track">
+      <div class="diag-item"><i class="fa-brands fa-cc-visa"></i>Visa</div>
+      <div class="diag-item"><i class="fa-brands fa-cc-mastercard"></i>Mastercard</div>
+      <div class="diag-item"><i class="fa-brands fa-cc-amex"></i>Amex</div>
+
+      <div class="diag-item"><i class="fa-brands fa-cc-paypal"></i>PayPal</div>
+      <div class="diag-item"><i class="fa-brands fa-google-pay"></i>Google Pay</div>
+      <div class="diag-item"><i class="fa-brands fa-apple-pay"></i>Apple Pay</div>
+      <div class="diag-item"><i class="fa-solid fa-building-columns"></i>Bank Transfer</div>
+      <div class="diag-item"><i class="fa-brands fa-cc-visa"></i>Visa</div>
+      <div class="diag-item"><i class="fa-brands fa-cc-mastercard"></i>Mastercard</div>
+      <div class="diag-item"><i class="fa-brands fa-cc-amex"></i>Amex</div>
+      <div class="diag-item"><i class="fa-brands fa-cc-paypal"></i>PayPal</div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. INTERACTIVE FEATURE SHOWCASE -->
+<section class="section" id="platform-preview">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <div class="eyebrow">Why Stackly</div>
+      <h2 class="section-tag">Billing infrastructure, not another spreadsheet.</h2>
+    </div>
+
+    <div class="showcase">
+      <div class="showcase-tabs">
+        <button class="sc-tab active" data-target="0">
+          <span class="sc-tab-icon"><i class="fa-solid fa-shield-halved"></i></span>
+          <span class="sc-tab-text">
+            <strong>PCI DSS Level 1</strong>
+            <p>Every card transaction is tokenized before it ever reaches our servers.</p>
+          </span>
+        </button>
+        <button class="sc-tab" data-target="1">
+          <span class="sc-tab-icon"><i class="fa-solid fa-file-invoice"></i></span>
+          <span class="sc-tab-text">
+            <strong>Invoices in seconds</strong>
+            <p>Branded, itemized, tax-aware invoices generated instantly.</p>
+          </span>
+        </button>
+        <button class="sc-tab" data-target="2">
+          <span class="sc-tab-icon"><i class="fa-solid fa-rotate"></i></span>
+          <span class="sc-tab-text">
+            <strong>Auto-retry billing</strong>
+            <p>Failed payments are retried automatically, on your schedule.</p>
+          </span>
+        </button>
+        <button class="sc-tab" data-target="3">
+          <span class="sc-tab-icon"><i class="fa-solid fa-chart-pie"></i></span>
+          <span class="sc-tab-text">
+            <strong>Live cash flow</strong>
+            <p>Revenue, churn and aging receivables, updated in real time.</p>
+          </span>
+        </button>
+      </div>
+
+      <div class="showcase-panel">
+        <div class="sc-panel-item active" data-panel="0">
+          <img src="assets/images/secure-payment-laptop-hologram.webp" alt="Secure payment hologram interface">
+        </div>
+        <div class="sc-panel-item" data-panel="1">
+          <img src="assets/images/invoice-work-laptop-desk.webp" alt="Invoice being drafted on laptop">
+        </div>
+        <div class="sc-panel-item" data-panel="2">
+          <img src="assets/images/auto-renew-subscription-app.webp" alt="Auto-retry billing app">
+        </div>
+        <div class="sc-panel-item" data-panel="3">
+          <img src="assets/images/analytics-dashboard-laptop.webp" alt="Analytics dashboard on laptop">
+        </div>
+        <div class="sc-panel-glow"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. ZIGZAG TIMELINE -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head center" data-aos="fade-up"><div class="eyebrow">How it works</div><h2 class="section-tag">From invoice to reconciled payout.</h2></div>
+    <div class="zigzag">
+      <div class="zig-row"><div class="zig-card" data-aos="fade-right"><span class="zig-num">01</span><h4>Create the invoice</h4><p>Pick a template, add line items and taxes — or automate it entirely.</p></div><div class="zig-dot"></div><div></div></div>
+      <div class="zig-row"><div></div><div class="zig-dot"></div><div class="zig-card" data-aos="fade-left"><span class="zig-num">02</span><h4>Client pays instantly</h4><p>Card, wallet or bank transfer from a secure hosted checkout page.</p></div></div>
+      <div class="zig-row"><div class="zig-card" data-aos="fade-right"><span class="zig-num">03</span><h4>Funds settle same-day</h4><p>Payments land in your bank account, auto-reconciled against the invoice.</p></div><div class="zig-dot"></div><div></div></div>
+      <div class="zig-row"><div></div><div class="zig-dot"></div><div class="zig-card" data-aos="fade-left"><span class="zig-num">04</span><h4>Track it all live</h4><p>Revenue, overdue invoices and renewals from one dashboard.</p></div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 4b. PAYMENT MOMENTS SHOWCASE -->
+<section class="section" style="padding:80px 0;overflow:hidden;">
+  <div class="container">
+    <div class="section-head center" data-aos="fade-up">
+      <div class="eyebrow">Every payment moment</div>
+      <h2 class="section-tag">However they pay, Stackly catches it.</h2>
+    </div>
+  </div>
+
+  <div class="moments-wrap">
+    <div class="moments-track">
+      <div class="moment-card mc-large">
+        <img src="assets/images/contactless-tap-payment.webp" alt="Contactless tap payment">
+        <div class="moment-tag"><i class="fa-solid fa-wave-square"></i> Tap to pay</div>
+      </div>
+      <div class="moment-card">
+        <img src="assets/images/mobile-pos-payment-retail.webp" alt="Mobile point-of-sale payment in retail">
+        <div class="moment-tag"><i class="fa-solid fa-mobile-screen"></i> Mobile POS</div>
+      </div>
+      <div class="moment-card mc-large">
+        <img src="assets/images/card-tap-pos-terminal-3d.webp" alt="Card tap on POS terminal">
+        <div class="moment-tag"><i class="fa-solid fa-credit-card"></i> Card checkout</div>
+      </div>
+      <div class="moment-card">
+        <img src="assets/images/mobile-wallet-nfc-payment.webp" alt="Mobile wallet NFC payment">
+        <div class="moment-tag"><i class="fa-solid fa-wallet"></i> Digital wallets</div>
+      </div>
+      <div class="moment-card mc-large">
+        <img src="assets/images/online-shopping-google-pay.webp" alt="Online shopping checkout with Google Pay">
+        <div class="moment-tag"><i class="fa-solid fa-cart-shopping"></i> Online checkout</div>
+      </div>
+      <div class="moment-card">
+        <img src="assets/images/dashboard-analytics-dark-ui.webp" alt="Dark UI analytics dashboard">
+        <div class="moment-tag"><i class="fa-solid fa-chart-line"></i> Live analytics</div>
+      </div>
+      <!-- duplicate set for seamless loop -->
+      <div class="moment-card mc-large">
+        <img src="assets/images/contactless-tap-payment.webp" alt="Contactless tap payment">
+        <div class="moment-tag"><i class="fa-solid fa-wave-square"></i> Tap to pay</div>
+      </div>
+      <div class="moment-card">
+        <img src="assets/images/mobile-pos-payment-retail.webp" alt="Mobile point-of-sale payment in retail">
+        <div class="moment-tag"><i class="fa-solid fa-mobile-screen"></i> Mobile POS</div>
+      </div>
+      <div class="moment-card mc-large">
+        <img src="assets/images/card-tap-pos-terminal-3d.webp" alt="Card tap on POS terminal">
+        <div class="moment-tag"><i class="fa-solid fa-credit-card"></i> Card checkout</div>
+      </div>
+      <div class="moment-card">
+        <img src="assets/images/mobile-wallet-nfc-payment.webp" alt="Mobile wallet NFC payment">
+        <div class="moment-tag"><i class="fa-solid fa-wallet"></i> Digital wallets</div>
+      </div>
+      <div class="moment-card mc-large">
+        <img src="assets/images/online-shopping-google-pay.webp" alt="Online shopping checkout with Google Pay">
+        <div class="moment-tag"><i class="fa-solid fa-cart-shopping"></i> Online checkout</div>
+      </div>
+      <div class="moment-card">
+        <img src="assets/images/dashboard-analytics-dark-ui.webp" alt="Dark UI analytics dashboard">
+        <div class="moment-tag"><i class="fa-solid fa-chart-line"></i> Live analytics</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. DRAG-SCROLL GALLERY -->
+<section class="section">
+  <div class="container">
+    <div class="section-head center" data-aos="fade-up"><div class="eyebrow">Product tour</div><h2 class="section-tag">Drag to explore the workspace.</h2></div>
+    <div class="drag-gallery" data-aos="fade-up">
+      <div class="drag-card"><img src="assets/images/mobile-invoice-app.webp" alt="Mobile invoicing app screen"><div class="drag-card-body"><h4>Invoice on the go</h4><p>Draft and send invoices straight from your phone.</p></div></div>
+      <div class="drag-card"><img src="assets/images/online-card-payment-phone.webp" alt="Hosted checkout on phone"><div class="drag-card-body"><h4>Hosted checkout</h4><p>A payment page that matches your brand, not ours.</p></div></div>
+      <div class="drag-card"><img src="assets/images/auto-renew-subscription-app.webp" alt="Subscription auto-renew app screen"><div class="drag-card-body"><h4>Subscription manager</h4><p>Pause, upgrade or cancel without a support ticket.</p></div></div>
+      <div class="drag-card"><img src="assets/images/laptop-holographic-analytics.webp" alt="Holographic analytics on laptop"><div class="drag-card-body"><h4>Live analytics</h4><p>Cash flow, churn and receivables in one view.</p></div></div>
+      <div class="drag-card"><img src="assets/images/tablet-finance-data-table.webp" alt="Finance data table on tablet"><div class="drag-card-body"><h4>Detailed ledgers</h4><p>Every transaction, exportable in one click.</p></div></div>
+    </div>
+    <p class="drag-hint"> drag to scroll </p>
+  </div>
+</section>
+
+<!-- 6. LIVE SPOTLIGHT + FEED -->
+<section class="section section-alt stat-live-section">
+  <div class="container">
+    <div class="section-head center" data-aos="fade-up">
+      <div class="eyebrow">Numbers that matter</div>
+      <h2 class="section-tag">This is what winning looks like.</h2>
+    </div>
+
+    <div class="stat-live" data-aos="zoom-in">
+
+      <!-- Spotlight -->
+      <div class="sl-spotlight">
+        <div class="sl-spot-track">
+          <div class="sl-spot active" data-index="0">
+            <span class="sl-spot-icon"><i class="fa-solid fa-clock"></i></span>
+            <span class="sl-spot-num" data-count="94" data-suffix="%">0%</span>
+            <span class="sl-spot-label">On-time payments</span>
+          </div>
+          <div class="sl-spot" data-index="1">
+            <span class="sl-spot-icon"><i class="fa-solid fa-server"></i></span>
+            <span class="sl-spot-num" data-count="99.99" data-suffix="%">0%</span>
+            <span class="sl-spot-label">Platform uptime</span>
+          </div>
+          <div class="sl-spot" data-index="2">
+            <span class="sl-spot-icon"><i class="fa-solid fa-arrow-trend-down"></i></span>
+            <span class="sl-spot-num" data-count="88" data-suffix="%">0%</span>
+            <span class="sl-spot-label">Fewer late payments</span>
+          </div>
+          <div class="sl-spot" data-index="3">
+            <span class="sl-spot-icon"><i class="fa-solid fa-face-smile"></i></span>
+            <span class="sl-spot-num" data-count="97" data-suffix="%">0%</span>
+            <span class="sl-spot-label">Customer satisfaction</span>
+          </div>
+        </div>
+        <div class="sl-dots">
+          <button class="active" data-goto="0"></button>
+          <button data-goto="1"></button>
+          <button data-goto="2"></button>
+          <button data-goto="3"></button>
+        </div>
+      </div>
+
+      <!-- Live feed -->
+      <div class="sl-feed">
+        <div class="sl-feed-head">
+          <span class="sl-live-dot"></span> Live activity
+        </div>
+        <div class="sl-feed-list" id="slFeedList"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 7. SECURITY EXPAND CARDS -->
+<section class="section">
+  <div class="container">
+    <div class="section-head center" data-aos="fade-up"><div class="eyebrow">Security</div><h2 class="section-tag">Tap a card to see how we protect it.</h2></div>
+    <div class="expand-grid">
+      <div class="xcard open" data-aos="fade-up"><i class="fa-solid fa-lock"></i><h4>Tokenized cards</h4><div class="xcard-body"><p>Card numbers never touch your servers — tokenized at checkout.</p></div></div>
+      <div class="xcard" data-aos="fade-up" data-aos-delay="80"><i class="fa-solid fa-user-shield"></i><h4>2FA everywhere</h4><div class="xcard-body"><p>Required by default for admin and finance roles.</p></div></div>
+      <div class="xcard" data-aos="fade-up" data-aos-delay="160"><i class="fa-solid fa-file-shield"></i><h4>Full audit log</h4><div class="xcard-body"><p>Every edit, refund and login is timestamped and exportable.</p></div></div>
+      <div class="xcard" data-aos="fade-up" data-aos-delay="240"><i class="fa-solid fa-cloud"></i><h4>Encrypted backups</h4><div class="xcard-body"><p>Hourly, multi-region, retained for 12 months.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. TESTIMONIAL MARQUEE WALL -->
+<section class="section section-alt testi-marquee-section">
+  <div class="container">
+    <div class="section-head center" data-aos="fade-up">
+      <div class="eyebrow">Customers</div>
+      <h2 class="section-tag">Trusted by finance teams and founders.</h2>
+    </div>
+  </div>
+
+  <div class="testi-marquee-wrap">
+
+    <!-- Row 1: scrolls left -->
+    <div class="testi-row">
+      <div class="testi-track testi-track-left">
+        <div class="tm-card"><div class="tm-stars">★★★★★</div><p>"Cut our days-sales-outstanding by 40% in one quarter."</p><div class="tm-author"><img src="assets/images/businessman-portrait.webp" alt="Arvind Menon"><div><strong>Arvind Menon</strong><span>Agency finance lead</span></div></div></div>
+        <div class="tm-card"><div class="tm-stars">★★★★☆</div><p>"Recurring billing just runs now. Clients rarely miss a payment."</p><div class="tm-author"><img src="assets/images/confident-businesswoman-portrait.webp" alt="Farah Iqbal"><div><strong>Farah Iqbal</strong><span>SaaS founder</span></div></div></div>
+        <div class="tm-card"><div class="tm-stars">★★★★★</div><p>"Setup took twenty minutes. Our first invoice went out same day."</p><div class="tm-author"><img src="assets/images/confident-businesswoman-portrait.webp" alt="Ritu Malhotra"><div><strong>Ritu Malhotra</strong><span>Studio owner</span></div></div></div>
+        <div class="tm-card"><div class="tm-stars">★★★★★</div><p>"Replaced three tools with one ledger. Never going back."</p><div class="tm-author"><img src="assets/images/businesswoman-portrait-glasses.webp" alt="Sneha Kapoor"><div><strong>Sneha Kapoor</strong><span>Freelance consultant</span></div></div></div>
+        <!-- duplicate for seamless loop -->
+        <div class="tm-card"><div class="tm-stars">★★★★★</div><p>"Cut our days-sales-outstanding by 40% in one quarter."</p><div class="tm-author"><img src="assets/images/businessman-portrait.webp" alt="Arvind Menon"><div><strong>Arvind Menon</strong><span>Agency finance lead</span></div></div></div>
+        <div class="tm-card"><div class="tm-stars">★★★★☆</div><p>"Recurring billing just runs now. Clients rarely miss a payment."</p><div class="tm-author"><img src="assets/images/confident-businesswoman-portrait.webp" alt="Farah Iqbal"><div><strong>Farah Iqbal</strong><span>SaaS founder</span></div></div></div>
+        <div class="tm-card"><div class="tm-stars">★★★★★</div><p>"Setup took twenty minutes. Our first invoice went out same day."</p><div class="tm-author"><img src="assets/images/confident-businesswoman-portrait.webp" alt="Ritu Malhotra"><div><strong>Ritu Malhotra</strong><span>Studio owner</span></div></div></div>
+        <div class="tm-card"><div class="tm-stars">★★★★★</div><p>"Replaced three tools with one ledger. Never going back."</p><div class="tm-author"><img src="assets/images/businesswoman-portrait-glasses.webp" alt="Sneha Kapoor"><div><strong>Sneha Kapoor</strong><span>Freelance consultant</span></div></div></div>
+      </div>
+    </div>
+
+    <!-- Row 2: scrolls right -->
+    <div class="testi-row">
+      <div class="testi-track testi-track-right">
+        <div class="tm-card"><div class="tm-stars">★★★★★</div><p>"Support answered a reconciliation question within the hour."</p><div class="tm-author"><img src="assets/images/businessman-portrait.webp" alt="Devraj Nair"><div><strong>Devraj Nair</strong><span>Operations manager</span></div></div></div>
+        <div class="tm-card"><div class="tm-stars">★★★★★</div><p>"Our invoicing turnaround went from days to minutes."</p><div class="tm-author"><img src="assets/images/businesswoman-portrait-glasses.webp" alt="Meera Suresh"><div><strong>Meera Suresh</strong><span>Agency owner</span></div></div></div>
+        <div class="tm-card"><div class="tm-stars">★★★★☆</div><p>"Dashboards actually match what finance needs to see."</p><div class="tm-author"><img src="assets/images/confident-businesswoman-portrait.webp" alt="Kabir Sethi"><div><strong>Kabir Sethi</strong><span>Finance director</span></div></div></div>
+        <div class="tm-card"><div class="tm-stars">★★★★★</div><p>"Payouts land same day, every time. No more chasing banks."</p><div class="tm-author"><img src="assets/images/businessman-portrait.webp" alt="Rohan Vora"><div><strong>Rohan Vora</strong><span>Founder</span></div></div></div>
+        <!-- duplicate for seamless loop -->
+        <div class="tm-card"><div class="tm-stars">★★★★★</div><p>"Support answered a reconciliation question within the hour."</p><div class="tm-author"><img src="assets/images/businessman-portrait.webp" alt="Devraj Nair"><div><strong>Devraj Nair</strong><span>Operations manager</span></div></div></div>
+        <div class="tm-card"><div class="tm-stars">★★★★★</div><p>"Our invoicing turnaround went from days to minutes."</p><div class="tm-author"><img src="assets/images/businesswoman-portrait-glasses.webp" alt="Meera Suresh"><div><strong>Meera Suresh</strong><span>Agency owner</span></div></div></div>
+        <div class="tm-card"><div class="tm-stars">★★★★☆</div><p>"Dashboards actually match what finance needs to see."</p><div class="tm-author"><img src="assets/images/confident-businesswoman-portrait.webp" alt="Kabir Sethi"><div><strong>Kabir Sethi</strong><span>Finance director</span></div></div></div>
+        <div class="tm-card"><div class="tm-stars">★★★★★</div><p>"Payouts land same day, every time. No more chasing banks."</p><div class="tm-author"><img src="assets/images/businessman-portrait.webp" alt="Rohan Vora"><div><strong>Rohan Vora</strong><span>Founder</span></div></div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 9. PLAN STRIP TEASER -->
+<section class="section plan-strip-section">
+  <div class="container">
+    <div class="section-head center" data-aos="fade-up">
+      <div class="eyebrow">Plans</div>
+      <h2 class="section-tag">One plan, always within reach.</h2>
+    </div>
+
+    <div class="ps-toggle-wrap" data-aos="fade-up">
+      <span class="ps-toggle-label active" data-mode="monthly">Monthly</span>
+      <button class="ps-toggle" id="psToggle" aria-label="Toggle billing period">
+        <span class="ps-toggle-knob"></span>
+      </button>
+      <span class="ps-toggle-label" data-mode="yearly">Yearly <span class="ps-save">save 20%</span></span>
+    </div>
+
+    <div class="plan-strip" data-aos="zoom-in">
+
+      <div class="ps-card">
+        <h4>Starter</h4>
+        <div class="ps-price">
+          <span class="ps-amt">Free</span>
+        </div>
+        <p class="ps-sub">For getting your first invoice out</p>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> Up to 5 invoices/mo</li>
+          <li><i class="fa-solid fa-check"></i> Card &amp; wallet payments</li>
+          <li><i class="fa-solid fa-check"></i> Email support</li>
+        </ul>
+        <a href="404.html" class="btn btn-ghost btn-block">Start free</a>
+      </div>
+
+      <div class="ps-card ps-featured">
+        <span class="ps-badge">Most popular</span>
+        <h4>Growth</h4>
+        <div class="ps-price">
+          <span class="ps-currency">$</span>
+          <span class="ps-amt" data-monthly="19" data-yearly="15">19</span>
+          <span class="ps-period">/mo</span>
+        </div>
+        <p class="ps-sub">For teams billing on repeat</p>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> Unlimited invoices</li>
+          <li><i class="fa-solid fa-check"></i> Recurring billing</li>
+          <li><i class="fa-solid fa-check"></i> Priority support</li>
+        </ul>
+        <a href="404.html" class="btn btn-primary btn-block">Start Growth trial</a>
+      </div>
+
+      <div class="ps-card">
+        <h4>Enterprise</h4>
+        <div class="ps-price">
+          <span class="ps-amt">Custom</span>
+        </div>
+        <p class="ps-sub">For finance teams at scale</p>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> Role-based access</li>
+          <li><i class="fa-solid fa-check"></i> Dedicated manager</li>
+          <li><i class="fa-solid fa-check"></i> Custom reporting</li>
+        </ul>
+        <a href="404.html" class="btn btn-ghost btn-block">Talk to sales</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 10. BAR COMPARISON -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head center" data-aos="fade-up"><div class="eyebrow">Comparison</div><h2 class="section-tag">Where Stackly pulls ahead.</h2></div>
+    <div class="bar-compare" style="max-width:760px;margin:0 auto;" data-aos="fade-up">
+      <div class="bar-row"><span class="label">Time to first invoice</span><div class="bar-track"><div class="bar-fill" data-width="92"></div></div></div>
+      <div class="bar-row"><span class="label">On-time payment rate</span><div class="bar-track"><div class="bar-fill" data-width="94"></div></div></div>
+      <div class="bar-row"><span class="label">Reconciliation accuracy</span><div class="bar-track"><div class="bar-fill" data-width="99"></div></div></div>
+      <div class="bar-row"><span class="label">Support satisfaction</span><div class="bar-track"><div class="bar-fill" data-width="97"></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. FAQ SPLIT -->
+<section class="section faq-split-section">
+  <div class="container">
+    <div class="faq-split">
+
+      <div class="faq-split-media" data-aos="fade-right">
+        <div class="faq-photo-frame">
+          <div class="faq-frame-outline"></div>
+          <div class="faq-frame-img">
+            <img src="assets/images/confident-businesswoman-portrait.webp" alt="Stackly customer">
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-split-content" data-aos="fade-left">
+        <div class="eyebrow">FAQ</div>
+        <h2 class="faq-split-title">Ask away.</h2>
+
+        <div class="accordion faq-split-accordion">
+          <div class="acc-item active">
+            <button class="acc-head">
+              <span>Does Stackly take a cut of my payments?</span>
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="acc-body">
+              <p>Standard processing rates apply, shown transparently at checkout — no extra Stackly markup. What you see at signup is what you pay, and it never changes without notice.</p>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <button class="acc-head">
+              <span>Can clients pay in their own currency?</span>
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="acc-body">
+              <p>Yes — checkout supports 120+ currencies with live conversion.</p>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <button class="acc-head">
+              <span>How fast do payouts settle?</span>
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="acc-body">
+              <p>Most payouts settle to your connected bank account the same business day.</p>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <button class="acc-head">
+              <span>Is there a contract or lock-in?</span>
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="acc-body">
+              <p>No — all paid plans are month-to-month and cancellable anytime.</p>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <button class="acc-head">
+              <span>What happens if a payment fails?</span>
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="acc-body">
+              <p>Stackly automatically retries failed charges on a schedule you control, and notifies both you and the client before anything lapses.</p>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <button class="acc-head">
+              <span>Is my financial data safe?</span>
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="acc-body">
+              <p>Every transaction is encrypted end-to-end and tokenized at checkout — card numbers never touch your servers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 12. FINAL CTA — PHOTO STACK -->
+<section class="final-cta-photo">
+  <div class="container">
+    <div class="cta-photo-row" data-aos="fade-up">
+
+      <div class="cta-stack cta-stack-left">
+        <div class="cta-stack-card cta-stack-back"></div>
+        <div class="cta-stack-card cta-stack-front">
+          <img src="assets/images/mobile-pos-payment-retail.webp" alt="Mobile point-of-sale payment">
+        </div>
+      </div>
+
+      <div class="cta-photo-text">
+        <h2>Send your next invoice<br>in under two minutes.</h2>
+        <p>Get access free — no card required, cancel anytime. Join the teams already running billing on autopilot.</p>
+        <a href="404.html" class="btn btn-primary">Get Access Free</a>
+      </div>
+
+      <div class="cta-stack cta-stack-right">
+        <div class="cta-stack-card cta-stack-back"></div>
+        <div class="cta-stack-card cta-stack-front">
+          <img src="assets/images/analytics-dashboard-laptop.webp" alt="Analytics dashboard on laptop">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer-folk">
+  <div class="sff-stripe">
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="container">
+    <div class="sff-top">
+      <div>
+        <a href="index.html"><img src="assets/images/stackly-logo-cyan.webp" alt="Stackly logo" class="sff-logo"></a>
+        <h2>Start 14-day free<br>trial on Stackly</h2>
+      </div>
+      <div class="sff-cta-group">
+        <a href="404.html" class="sff-btn-solid">Try for free</a>
+        <a href="404.html" class="sff-btn-outline">Get a demo</a>
+        
+      </div>
+    </div>
+
+    <div class="sff-cols">
+      <div class="sff-col">
+        <h4>Company</h4>
+        <a href="index.html">Home</a>
+        <a href="story.html">Story</a>
+        <a href="platform.html">Platform</a>
+        <a href="plans.html">Plans</a>
+        <a href="reach-us.html">Contact us</a>
+      </div>
+      
+      <div class="sff-col">
+        <h4>Use cases</h4>
+        <a href="404.html">Stackly for freelancers</a>
+        <a href="404.html">Stackly for agencies</a>
+        <a href="404.html">Stackly for retail</a>
+        <a href="404.html">Stackly for finance teams</a>
+      </div>
+      <div class="sff-col">
+          <h4>Reach Us</h4>
+          <a href="404.html">MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil, Salem, Tamil Nadu 636008</a>
+          <a href="404.html">+91 9644356574</a>
+          <a href="404.html">info@stackly.com</a>
+        </div>
+        
+      
+      
+    </div>
+
+    <div class="sff-bottom">
+      <span>© 2026 Stackly Technologies.</span>
+      <div class="sff-social">
+        <a href="404.html" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="404.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="404.html" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="404.html" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/home.js"></script>
+</body>
+</html>

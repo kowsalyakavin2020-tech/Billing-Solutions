@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plans — Simple Pricing, No Processing Surprises | Stackly</title>
+<meta name="description" content="Slide to your invoice volume and see the right Stackly plan. Transparent pricing, no hidden processing markup, 30-day money-back guarantee.">
+<meta name="keywords" content="stackly pricing, billing software plans, invoicing fees, payment processing rates">
+<link rel="icon" href="assets/images/stackly-logo-cyan.webp">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/plans.css">
+
+</head>
+<body>
+  <div class="loader">
+    <img src="assets/images/stackly-logo-cyan.webp" alt="Stackly">
+    <div class="loader-ring"></div>
+    <p>Loading, please wait...</p>
+  </div>
+
+
+
+
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand"><img src="assets/images/stackly-logo-cyan.webp" alt="Stackly logo"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="story.html">Story</a></li>
+      <li>
+        <a href="platform.html">Platform <i class="fa-solid fa-chevron-down"></i></a>
+        <ul class="dropdown">
+          <li><a href="platform.html#invoicing"><i class="fa-solid fa-file-invoice"></i> Invoicing</a></li>
+          <li><a href="platform.html#payments"><i class="fa-solid fa-credit-card"></i> Payments</a></li>
+          <li><a href="platform.html#recurring"><i class="fa-solid fa-rotate"></i> Recurring Billing</a></li>
+          <li><a href="platform.html#insights"><i class="fa-solid fa-chart-pie"></i> Insights</a></li>
+        </ul>
+      </li>
+      <li><a href="plans.html">Plans</a></li>
+      <li><a href="reach-us.html">Reach Us</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="signin.html" class="btn btn-ghost btn-sm">Sign In</a>
+      <a href="get-access.html" class="btn btn-primary btn-sm">Get Access</a>
+    </div>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<nav class="mobile-menu">
+  <div class="mm-top">
+    <a href="index.html" class="brand"><img src="assets/images/stackly-logo-cyan.webp" alt="Stackly logo"></a>
+    <button class="mm-close" id="mobileMenuClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <a href="index.html">Home</a>
+  <a href="story.html">Story</a>
+  <div class="has-sub">
+    <a href="#">Platform <i class="fa-solid fa-chevron-down"></i></a>
+    <div class="sub-list">
+      <a href="platform.html#invoicing">Invoicing</a>
+      <a href="platform.html#payments">Payments</a>
+      <a href="platform.html#recurring">Recurring Billing</a>
+      <a href="platform.html#insights">Insights</a>
+    </div>
+  </div>
+  <a href="plans.html">Plans</a>
+  <a href="reach-us.html">Reach Us</a>
+  <div class="mobile-menu-actions">
+    <a href="signin.html" class="btn btn-ghost btn-block">Sign In</a>
+    <a href="get-access.html" class="btn btn-primary btn-block">Get Access</a>
+  </div>
+</nav>
+
+
+<main>
+
+<!-- 1. HERO — RICH WITH PREVIEW -->
+<section class="plans-hero-rich">
+  <div class="container">
+    <div class="phr-grid">
+
+      <div class="phr-copy">
+        <div class="breadcrumb"><a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i><span>Plans</span></div>
+        <h1 data-aos="fade-up">Drag the slider. Find your plan.</h1>
+        <p data-aos="fade-up" data-aos-delay="100">No hidden processing markup, no surprise fee on cancellation. Slide to your monthly invoice volume and see what fits.</p>
+
+        <div class="phr-badges" data-aos="fade-up" data-aos-delay="150">
+          <span class="phr-badge"><i class="fa-solid fa-check"></i> No credit card to start</span>
+          <span class="phr-badge"><i class="fa-solid fa-check"></i> Cancel anytime</span>
+        </div>
+      </div>
+
+      <div class="phr-media" data-aos="fade-up" data-aos-delay="200">
+        <div class="phr-mini-card">
+          <div class="phr-mini-top">
+            <span class="phr-mini-plan">Growth</span>
+            <span class="phr-mini-price">$19<small>/mo</small></span>
+          </div>
+          <div class="phr-mini-track"><div class="phr-mini-fill"></div></div>
+          <div class="phr-mini-list">
+            <span><i class="fa-solid fa-check"></i> Recurring billing</span>
+            <span><i class="fa-solid fa-check"></i> Client portal</span>
+            <span><i class="fa-solid fa-check"></i> Tax-ready exports</span>
+          </div>
+        </div>
+        <div class="phr-float-chip"><i class="fa-solid fa-bolt"></i> 0% hidden markup</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 2. CONFIGURATOR -->
+<section class="section" style="padding-top:40px;">
+  <div class="container">
+    <div class="configurator" data-aos="fade-up">
+      <div class="config-left">
+        <h3>How many invoices do you send monthly?</h3>
+        <div class="range-row">
+          <label><span>Invoice volume</span><span id="volLabel">5 / month</span></label>
+          <input type="range" min="0" max="2" value="0" step="1" id="planRange">
+          <div class="tier-labels"><span>Solo (≤5)</span><span>Team (unlimited)</span><span>Company-wide</span></div>
+        </div>
+        <ul class="config-feature-list" id="featureList">
+          <li class="on" data-min="0"><i class="fa-solid fa-check"></i> Card &amp; wallet payments</li>
+          <li class="on" data-min="0"><i class="fa-solid fa-check"></i> Email support</li>
+          <li data-min="1"><i class="fa-solid fa-check"></i> Recurring billing</li>
+          <li data-min="1"><i class="fa-solid fa-check"></i> Client portal</li>
+          <li data-min="1"><i class="fa-solid fa-check"></i> Tax-ready exports</li>
+          <li data-min="2"><i class="fa-solid fa-check"></i> Role-based access</li>
+          <li data-min="2"><i class="fa-solid fa-check"></i> Dedicated manager</li>
+          <li data-min="2"><i class="fa-solid fa-check"></i> Custom reporting</li>
+        </ul>
+      </div>
+      <div class="config-right">
+        <img src="assets/images/growth-chart-mobile-3d.webp" alt="3D growth chart on mobile screen" style="width:100%;height:100px;object-fit:cover;border-radius:12px;margin-bottom:16px;">
+        <div class="plan-name" id="planName">Starter</div>
+        <div class="plan-price" id="planPrice">Free</div>
+        <a href="404.html" class="btn btn-primary btn-block">Get this plan</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. COMPARISON TABLE -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head center" data-aos="fade-up"><div class="eyebrow">Compare</div><h2 class="section-tag">Every feature, side by side.</h2></div>
+    <div class="plan-table-scroll" data-aos="fade-up">
+      <table class="plan-table">
+        <thead><tr><th>Feature</th><th>Starter</th><th>Growth</th><th>Enterprise</th></tr></thead>
+        <tbody>
+          <tr><td>Monthly invoices</td><td>5</td><td>Unlimited</td><td>Unlimited</td></tr>
+          <tr><td>Card &amp; wallet payments</td><td><i class="fa-solid fa-check yes"></i></td><td><i class="fa-solid fa-check yes"></i></td><td><i class="fa-solid fa-check yes"></i></td></tr>
+          <tr><td>Recurring billing</td><td><i class="fa-solid fa-xmark no"></i></td><td><i class="fa-solid fa-check yes"></i></td><td><i class="fa-solid fa-check yes"></i></td></tr>
+          <tr><td>Client portal</td><td><i class="fa-solid fa-xmark no"></i></td><td><i class="fa-solid fa-check yes"></i></td><td><i class="fa-solid fa-check yes"></i></td></tr>
+          <tr><td>Tax-ready exports</td><td><i class="fa-solid fa-xmark no"></i></td><td><i class="fa-solid fa-check yes"></i></td><td><i class="fa-solid fa-check yes"></i></td></tr>
+          <tr><td>Role-based access</td><td><i class="fa-solid fa-xmark no"></i></td><td><i class="fa-solid fa-xmark no"></i></td><td><i class="fa-solid fa-check yes"></i></td></tr>
+          <tr><td>Dedicated account manager</td><td><i class="fa-solid fa-xmark no"></i></td><td><i class="fa-solid fa-xmark no"></i></td><td><i class="fa-solid fa-check yes"></i></td></tr>
+          <tr><td>Support response time</td><td>48 hrs</td><td>2 hrs</td><td>SLA-backed</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 4. ADD-ONS TOGGLE LIST -->
+<section class="section">
+  <div class="container">
+    <div class="section-head center" data-aos="fade-up"><div class="eyebrow">Add-ons</div><h2 class="section-tag">Flip on what you need.</h2></div>
+    <div class="addon-list" data-aos="fade-up">
+      <div class="addon-row"><div><div class="a-name">Multi-currency checkout</div><div class="a-desc">120+ currencies with live conversion</div></div><div style="display:flex;align-items:center;gap:16px;"><span class="a-price">Included</span><div class="mini-switch on"></div></div></div>
+      <div class="addon-row"><div><div class="a-name">Extra team seats</div><div class="a-desc">Add finance or support teammates</div></div><div style="display:flex;align-items:center;gap:16px;"><span class="a-price">$8/seat/mo</span><div class="mini-switch"></div></div></div>
+      <div class="addon-row"><div><div class="a-name">Dedicated support line</div><div class="a-desc">Named contact, sub-hour response</div></div><div style="display:flex;align-items:center;gap:16px;"><span class="a-price">$15/mo</span><div class="mini-switch"></div></div></div>
+      <div class="addon-row"><div><div class="a-name">Advanced tax reporting</div><div class="a-desc">Country-specific tax templates</div></div><div style="display:flex;align-items:center;gap:16px;"><span class="a-price">$5/mo</span><div class="mini-switch"></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt metrics-section">
+  <div class="container">
+
+    <div class="metrics-header" data-aos="fade-up">
+      <div class="eyebrow-pill">Why businesses choose Stackly</div>
+      <h2>More than pricing.<br><em>Built for confidence.</em></h2>
+    </div>
+
+    <div class="bento-grid">
+
+      <div class="bento-card" data-aos="fade-up">
+        <h3>No hidden markup on payments</h3>
+        <p>No surprise platform fees added on top of your payment processing. What you see is what you pay — always.</p>
+      </div>
+
+      <div class="bento-center" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/images/contactless-tap-payment.webp" alt="Stackly POS terminal">
+        <div class="bento-center-overlay"></div>
+        <div class="bento-center-label"><strong>Stackly Payments</strong></div>
+        <div class="bento-center-bottom">
+          <div class="bento-badge">
+            <span class="bento-badge-dot"></span> 0% hidden markup
+          </div>
+        </div>
+      </div>
+
+      <div class="bento-card" data-aos="fade-up" data-aos-delay="100">
+        <h3>Complete ownership of your billing</h3>
+        <p>Your invoices, your data. Securely stored, fully encrypted, and never shared or sold to third parties.</p>
+      </div>
+
+      <div class="bento-card" data-aos="fade-up" data-aos-delay="150">
+        <h3>30-day money-back guarantee</h3>
+        <p>Risk-free trial with a full refund if Stackly isn't the right fit — no questions asked.</p>
+      </div>
+
+      <div class="bento-card" data-aos="fade-up" data-aos-delay="150">
+        <h3>Cancel or switch plans anytime</h3>
+        <p>No contracts, no lock-ins. Upgrade, downgrade or cancel whenever you want from your account settings.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 6. QUOTE — PORTRAIT SPOTLIGHT -->
+<section class="section quote-spotlight-section">
+  <div class="container">
+    <div class="qs-head" data-aos="fade-up">
+      <h2>What our customers say<br>about switching to Stackly</h2>
+    </div>
+
+    <div class="qs-card" data-aos="fade-up">
+      <div class="qs-copy">
+        <div class="qs-mark">
+          <svg viewBox="0 0 40 40" width="34" height="34"><path d="M8 10c-4 3-6 7-6 13 0 5 3 8 7 8s7-3 7-7c0-4-2-6-5-7 1-4 3-6 6-8zm18 0c-4 3-6 7-6 13 0 5 3 8 7 8s7-3 7-7c0-4-2-6-5-7 1-4 3-6 6-8z" fill="var(--coral)"/></svg>
+        </div>
+        <p>Switched from a 2.9% + fixed-fee processor to Stackly Growth's flat $19/mo. The client portal alone saved our team hours every week, and we broke even inside the first week of switching. Highly recommended for any team tired of surprise processing fees.</p>
+        <div class="qs-person">
+          <strong>Devraj Nair</strong>
+          <span>Operations manager · Growth plan</span>
+        </div>
+      </div>
+
+      <div class="qs-media">
+        <div class="qs-blob"></div>
+        <img src="assets/images/businessman-portrait.webp" alt="Portrait of a Growth plan subscriber">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. ENTERPRISE — RICH SPLIT WITH FLOATING STATS -->
+<section class="section section-alt ent-rich-section">
+  <div class="container">
+    <div class="ent-rich-grid">
+
+      <div class="ent-rich-media" data-aos="fade-up">
+        <img src="assets/images/stock-market-analysis-team.webp" alt="Enterprise finance team using Stackly">
+
+        <div class="ent-float-card ent-float-a">
+          <i class="fa-solid fa-users"></i>
+          <div><strong>Multi-seat</strong><span>Role-based access</span></div>
+        </div>
+
+        <div class="ent-float-card ent-float-b">
+          <i class="fa-solid fa-headset"></i>
+          <div><strong>Dedicated</strong><span>Account manager</span></div>
+        </div>
+
+        <div class="ent-float-badge">
+          <i class="fa-solid fa-shield-halved"></i> SLA-backed support
+        </div>
+      </div>
+
+      <div class="ent-rich-copy" data-aos="fade-up" data-aos-delay="100">
+        <div class="eyebrow">Enterprise</div>
+        <h2 class="section-tag">Built for finance teams and growing companies.</h2>
+        <p>Multi-seat access with role-based permissions, a dedicated account manager, and reporting tailored to your close calendar.</p>
+
+        <ul class="ent-checklist">
+          <li><i class="fa-solid fa-check"></i> Unlimited seats with granular roles</li>
+          <li><i class="fa-solid fa-check"></i> Custom reporting tied to your close</li>
+          <li><i class="fa-solid fa-check"></i> Priority SLA-backed support</li>
+          <li><i class="fa-solid fa-check"></i> Onboarding with a dedicated manager</li>
+        </ul>
+
+        <div class="ent-rich-actions">
+          <a href="404.html" class="btn btn-primary">Talk to sales </a>
+          <span class="ent-rich-note">Response within 2 business hours</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 8. FAQ — FLOATING PILLS -->
+<section class="section faq-pills-section">
+  <div class="faq-stars"></div>
+  <div class="container">
+    <div class="faq-pills-head" data-aos="fade-up">
+      <div class="eyebrow">FAQ</div>
+      <h2 class="section-tag">Frequently asked questions</h2>
+      <p>Here are the most frequently asked questions about our product.</p>
+    </div>
+
+    <div class="faq-pills-wrap" data-aos="fade-up" data-aos-delay="100">
+      <button class="faq-pill" data-target="p1"><i class="fa-solid fa-gift"></i> Is there a free forever plan?</button>
+      <button class="faq-pill" data-target="p2"><i class="fa-solid fa-bolt"></i> Is there a free trial available?</button>
+      <button class="faq-pill" data-target="p3"><i class="fa-solid fa-layer-group"></i> Is there a plan for high volume?</button>
+      <button class="faq-pill" data-target="p4"><i class="fa-solid fa-credit-card"></i> Do I need a card to get started?</button>
+      <button class="faq-pill" data-target="p5"><i class="fa-solid fa-shield-halved"></i> Are you SOC 2 compliant?</button>
+      <button class="faq-pill" data-target="p6"><i class="fa-solid fa-globe"></i> Can I use custom domains?</button>
+      <button class="faq-pill" data-target="p7"><i class="fa-solid fa-ban"></i> What is your cancellation policy?</button>
+    </div>
+
+    <div class="faq-pills-answer" id="faqAnswerBox">
+      <p id="faqAnswerText">Click any question above to see the answer here.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HERO — SCATTERED COLLAGE -->
+<section class="collage-hero-section">
+  <div class="collage-grid">
+    <img class="c-photo cp1" src="assets/images/businesswoman-portrait-glasses.webp" alt="">
+    <img class="c-photo cp2" src="assets/images/stock-market-analysis-team.webp" alt="">
+    <img class="c-photo cp3" src="assets/images/contactless-tap-payment.webp" alt="">
+    <img class="c-photo cp4" src="assets/images/businessman-portrait.webp" alt="">
+    <img class="c-photo cp5" src="assets/images/team-collaboration-meeting.webp" alt="">
+    <img class="c-photo cp6" src="assets/images/man-working-laptop-office.webp" alt="">
+    <img class="c-photo cp7" src="assets/images/data-analyst-dual-monitor.webp" alt="">
+    <img class="c-photo cp8" src="assets/images/confident-businesswoman-portrait.webp" alt="">
+
+    <div class="collage-center">
+      <h1>Build the future of<br>billing. Today.</h1>
+      <a href="404.html" class="btn btn-primary btn-pill">Get started</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer-folk">
+  <div class="sff-stripe">
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="container">
+    <div class="sff-top">
+      <div>
+        <a href="index.html"><img src="assets/images/stackly-logo-cyan.webp" alt="Stackly logo" class="sff-logo"></a>
+        <h2>Start 14-day free<br>trial on Stackly</h2>
+      </div>
+      <div class="sff-cta-group">
+        <a href="404.html" class="sff-btn-solid">Try for free</a>
+        <a href="404.html" class="sff-btn-outline">Get a demo</a>
+        
+      </div>
+    </div>
+
+    <div class="sff-cols">
+      <div class="sff-col">
+        <h4>Company</h4>
+        <a href="index.html">Home</a>
+        <a href="story.html">Story</a>
+        <a href="platform.html">Platform</a>
+        <a href="plans.html">Plans</a>
+        <a href="reach-us.html">Contact us</a>
+      </div>
+      
+      <div class="sff-col">
+        <h4>Use cases</h4>
+        <a href="404.html">Stackly for freelancers</a>
+        <a href="404.html">Stackly for agencies</a>
+        <a href="404.html">Stackly for retail</a>
+        <a href="404.html">Stackly for finance teams</a>
+      </div>
+      <div class="sff-col">
+          <h4>Reach Us</h4>
+          <a href="404.html">MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil, Salem, Tamil Nadu 636008</a>
+          <a href="404.html">+91 9644356574</a>
+          <a href="404.html">info@stackly.com</a>
+        </div>
+        
+      
+      
+    </div>
+
+    <div class="sff-bottom">
+      <span>© 2026 Stackly Technologies.</span>
+      <div class="sff-social">
+        <a href="404.html" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="404.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="404.html" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="404.html" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="assets/js/core.js"></script>
+<script>
+  const range = document.getElementById("planRange");
+  const volLabel = document.getElementById("volLabel");
+  const planName = document.getElementById("planName");
+  const planPrice = document.getElementById("planPrice");
+  const items = document.querySelectorAll("#featureList li");
+  const tiers = [
+    { label: "5 / month", name: "Starter", price: "Free" },
+    { label: "Unlimited", name: "Growth", price: "$19/mo" },
+    { label: "Unlimited (multi-seat)", name: "Enterprise", price: "Custom" }
+  ];
+  function update(v){
+    const t = tiers[v];
+    volLabel.textContent = t.label;
+    planName.textContent = t.name;
+    planPrice.textContent = t.price;
+    items.forEach(li => li.classList.toggle("on", parseInt(li.dataset.min) <= v));
+  }
+  range?.addEventListener("input", (e) => update(parseInt(e.target.value)));
+  update(0);
+
+  document.querySelectorAll(".mini-switch").forEach(sw => {
+    sw.addEventListener("click", () => sw.classList.toggle("on"));
+  });
+</script>
+<script>
+  const faqAnswers = {
+    p1: "No free-forever plan, but Starter is free for up to 5 invoices a month with no card required.",
+    p2: "There's no separate trial — Starter is free indefinitely, and you can upgrade to Growth whenever you're ready.",
+    p3: "Yes — Enterprise is built for high invoice volume with unlimited seats and custom reporting.",
+    p4: "No. You can start on the Starter plan without entering any card details.",
+    p5: "Reach out to our sales team for compliance documentation and security details.",
+    p6: "Custom domains are available on the Growth and Enterprise plans.",
+    p7: "Cancel anytime from your account settings — no contracts, no lock-ins, no cancellation fees."
+  };
+  document.querySelectorAll(".faq-pill").forEach(pill => {
+    pill.addEventListener("click", () => {
+      document.querySelectorAll(".faq-pill").forEach(p => p.classList.remove("active"));
+      pill.classList.add("active");
+      document.getElementById("faqAnswerText").textContent = faqAnswers[pill.dataset.target];
+    });
+  });
+</script>
+</body>
+</html>

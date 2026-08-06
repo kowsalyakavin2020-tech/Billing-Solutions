@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — Stackly</title>
+<meta name="description" content="Your Stackly dashboard — manage invoices, payments, subscriptions and cash flow insights.">
+<meta name="keywords" content="stackly dashboard, billing dashboard, invoice tracker">
+<link rel="icon" href="assets/images/stackly-logo-cyan.webp">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body>
+  <div class="loader">
+    <img src="assets/images/stackly-logo-cyan.webp" alt="Stackly">
+    <div class="loader-ring"></div>
+    <p>Loading, please wait...</p>
+  </div>
+
+
+<div class="dash-wrap">
+  <aside class="dash-sidebar" id="dashSidebar">
+    <div class="dash-sidebar-top">
+      <a href="index.html" class="brand"><img src="assets/images/stackly-logo-cyan.webp" alt="Stackly logo"></a>
+      <button class="dash-sidebar-close" id="dashSidebarClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="dash-sidebar-user" id="dashSidebarUser">
+      <div class="dash-user-avatar" id="userAvatarMobile">L</div>
+      <div class="dash-user-meta"><strong id="userEmailDisplayMobile">guest@stackly.io</strong><span id="userRoleDisplayMobile">admin</span></div>
+    </div>
+    <nav class="dash-nav">
+      <button class="dash-nav-item active" id="overviewAdminNav" data-panel="overview-admin"><i class="fa-solid fa-gauge"></i> Overview</button>
+      <button class="dash-nav-item" id="overviewClientNav" data-panel="overview-client" style="display:none;"><i class="fa-solid fa-gauge"></i> Overview</button>
+      <button class="dash-nav-item" data-panel="invoices"><i class="fa-solid fa-file-invoice"></i> Invoices</button>
+      <button class="dash-nav-item" data-panel="payments"><i class="fa-solid fa-credit-card"></i> Payments</button>
+      <button class="dash-nav-item" data-panel="subscriptions"><i class="fa-solid fa-rotate"></i> Subscriptions</button>
+      <button class="dash-nav-item" id="clientsNavItem" data-panel="clients" style="display:none;"><i class="fa-solid fa-users"></i> Clients</button>
+      <button class="dash-nav-item" id="walletNavItem" data-panel="wallet" style="display:none;"><i class="fa-solid fa-wallet"></i> Wallet</button>
+      <button class="dash-nav-item" data-panel="insights"><i class="fa-solid fa-chart-pie"></i> Insights</button>
+      <div class="dash-nav-divider"></div>
+      <button class="dash-nav-item" data-panel="settings"><i class="fa-solid fa-gear"></i> Settings</button>
+    </nav>
+    <div class="dash-sidebar-foot"><div class="dash-logout" id="logoutBtn"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log Out</div></div>
+  </aside>
+
+  <div class="dash-main">
+    <header class="dash-topbar">
+      <div style="display:flex;align-items:center;gap:16px;">
+        <button class="dash-menu-toggle" id="dashMenuToggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+        <span class="dash-title" id="panelTitle">Overview</span>
+      </div>
+      <div class="dash-user">
+        <div class="dash-user-meta"><strong id="userEmailDisplay">guest@stackly.io</strong><span id="userRoleDisplay">admin</span></div>
+        <div class="dash-user-avatar" id="userAvatar">L</div>
+      </div>
+    </header>
+
+    <div class="dash-content">
+
+      <!-- OVERVIEW — ADMIN -->
+      <section class="dash-panel" data-role="admin" id="panel-overview-admin">
+        <div class="dash-sub-head">Business snapshot</div>
+        <div class="kpi-strip">
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-solid fa-sack-dollar"></i></div><span class="kpi-trend up">+18.6%</span></div><div class="kpi-value">$92,410</div><div class="kpi-label">Revenue this month</div></div>
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-solid fa-file-invoice"></i></div><span class="kpi-trend up">+12</span></div><div class="kpi-value">86</div><div class="kpi-label">Invoices sent</div></div>
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-solid fa-users"></i></div><span class="kpi-trend up">+4</span></div><div class="kpi-value">48</div><div class="kpi-label">Active clients</div></div>
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-solid fa-rotate"></i></div><span class="kpi-trend up">+318</span></div><div class="kpi-value">1,942</div><div class="kpi-label">Active subscriptions</div></div>
+        </div>
+
+        <div class="dash-sub-head">Revenue by channel</div>
+        <div class="visual-row">
+          <div class="visual-card"><h4>Payment method mix</h4>
+            <div class="mini-bar-row"><span>Card</span><div class="mini-bar-track"><div class="mini-bar-fill" style="width:64%;"></div></div><span>64%</span></div>
+            <div class="mini-bar-row"><span>Bank</span><div class="mini-bar-track"><div class="mini-bar-fill" style="width:22%;"></div></div><span>22%</span></div>
+            <div class="mini-bar-row"><span>Wallet</span><div class="mini-bar-track"><div class="mini-bar-fill" style="width:14%;"></div></div><span>14%</span></div>
+          </div>
+          <div class="visual-card"><h4>Invoice status split</h4>
+            <div class="mini-bar-row"><span>Paid</span><div class="mini-bar-track"><div class="mini-bar-fill" style="width:78%;"></div></div><span>78%</span></div>
+            <div class="mini-bar-row"><span>Pending</span><div class="mini-bar-track"><div class="mini-bar-fill" style="width:14%;"></div></div><span>14%</span></div>
+            <div class="mini-bar-row"><span>Overdue</span><div class="mini-bar-track"><div class="mini-bar-fill" style="width:8%;"></div></div><span>8%</span></div>
+          </div>
+        </div>
+
+        <div class="dash-sub-head">Top clients by revenue</div>
+        <table class="data-table">
+          <thead><tr><th>Client</th><th>Total billed</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Acme Studio</td><td>$48,210</td><td><span class="status-pill done">Active</span></td></tr>
+            <tr><td>Bright Path LLC</td><td>$21,900</td><td><span class="status-pill done">Active</span></td></tr>
+            <tr><td>Nord Digital</td><td>$8,650</td><td><span class="status-pill pending">Overdue</span></td></tr>
+          </tbody>
+        </table>
+
+        <div class="dash-sub-head">Team activity</div>
+        <div class="dash-timeline">
+          <div class="dt-row"><div class="dt-icon"><i class="fa-solid fa-circle-check"></i></div><div><p>Payment received from Acme Studio</p><span>2 hours ago</span></div></div>
+          <div class="dt-row"><div class="dt-icon"><i class="fa-solid fa-user-plus"></i></div><div><p>New client onboarded: Vector Labs</p><span>4 days ago</span></div></div>
+          <div class="dt-row"><div class="dt-icon"><i class="fa-solid fa-rotate"></i></div><div><p>Subscription renewed: Nord Digital</p><span>2 days ago</span></div></div>
+        </div>
+      </section>
+
+      <!-- OVERVIEW — CLIENT -->
+      <section class="dash-panel" data-role="client" id="panel-overview-client">
+        <div class="dash-sub-head">Your account</div>
+        <div class="kpi-strip">
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-solid fa-file-invoice"></i></div><span class="kpi-trend up">2 due</span></div><div class="kpi-value">$1,730</div><div class="kpi-label">Outstanding balance</div></div>
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-solid fa-rotate"></i></div><span class="kpi-trend up">Monthly</span></div><div class="kpi-value">Growth Plan</div><div class="kpi-label">Next charge Aug 15</div></div>
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-brands fa-cc-visa"></i></div><span class="kpi-trend up">Default</span></div><div class="kpi-value">Visa •••• 4242</div><div class="kpi-label">Expires 08/28</div></div>
+        </div>
+
+        <div class="dash-sub-head">Your recent invoices</div>
+        <table class="data-table">
+          <thead><tr><th>Invoice</th><th>Amount</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>INV-2461</td><td>$4,280.00</td><td><span class="status-pill done">Paid</span></td></tr>
+            <tr><td>INV-2459</td><td>$860.00</td><td><span class="status-pill pending">Overdue</span></td></tr>
+            <tr><td>INV-2457</td><td>$610.00</td><td><span class="status-pill pending">Pending</span></td></tr>
+          </tbody>
+        </table>
+
+        <div class="dash-sub-head">Your spend breakdown</div>
+        <div class="visual-row">
+          <div class="visual-card"><h4>By category</h4>
+            <div class="mini-bar-row"><span>Subscriptions</span><div class="mini-bar-track"><div class="mini-bar-fill" style="width:55%;"></div></div><span>55%</span></div>
+            <div class="mini-bar-row"><span>One-off</span><div class="mini-bar-track"><div class="mini-bar-fill" style="width:45%;"></div></div><span>45%</span></div>
+          </div>
+        </div>
+
+        <div class="dash-sub-head">Recent activity</div>
+        <div class="dash-timeline">
+          <div class="dt-row"><div class="dt-icon"><i class="fa-solid fa-credit-card"></i></div><div><p>Payment sent for INV-2461</p><span>2 hours ago</span></div></div>
+          <div class="dt-row"><div class="dt-icon"><i class="fa-solid fa-file-invoice"></i></div><div><p>New invoice received: INV-2459</p><span>3 days ago</span></div></div>
+        </div>
+      </section>
+
+      <!-- INVOICES — ADMIN -->
+      <section class="dash-panel" data-role="admin" id="panel-invoices-admin">
+        <div class="dash-sub-head">All invoices</div>
+        <table class="data-table">
+          <thead><tr><th>Invoice</th><th>Client</th><th>Amount</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>INV-2461</td><td>Acme Studio</td><td>$4,280.00</td><td><span class="status-pill done">Paid</span></td></tr>
+            <tr><td>INV-2460</td><td>Bright Path LLC</td><td>$1,120.00</td><td><span class="status-pill done">Paid</span></td></tr>
+            <tr><td>INV-2459</td><td>Nord Digital</td><td>$860.00</td><td><span class="status-pill pending">Overdue</span></td></tr>
+            <tr><td>INV-2458</td><td>Halo Media</td><td>$2,340.00</td><td><span class="status-pill done">Paid</span></td></tr>
+            <tr><td>INV-2457</td><td>Vector Labs</td><td>$610.00</td><td><span class="status-pill pending">Pending</span></td></tr>
+          </tbody>
+        </table>
+
+        <div class="dash-sub-head">This month</div>
+        <div class="kpi-strip">
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-solid fa-file-invoice"></i></div><span class="kpi-trend up">+12</span></div><div class="kpi-value">86</div><div class="kpi-label">Invoices sent</div></div>
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-solid fa-circle-check"></i></div><span class="kpi-trend up">+9</span></div><div class="kpi-value">64</div><div class="kpi-label">Invoices paid</div></div>
+        </div>
+
+        <div class="dash-sub-head">Aging receivables</div>
+        <div class="visual-row">
+          <div class="visual-card"><h4>Days overdue</h4>
+            <div class="mini-bar-row"><span>0-15 days</span><div class="mini-bar-track"><div class="mini-bar-fill" style="width:60%;"></div></div><span>60%</span></div>
+            <div class="mini-bar-row"><span>16-30 days</span><div class="mini-bar-track"><div class="mini-bar-fill" style="width:28%;"></div></div><span>28%</span></div>
+            <div class="mini-bar-row"><span>30+ days</span><div class="mini-bar-track"><div class="mini-bar-fill" style="width:12%;"></div></div><span>12%</span></div>
+          </div>
+        </div>
+
+        <div class="dash-sub-head">Recent invoice activity</div>
+        <div class="dash-timeline">
+          <div class="dt-row"><div class="dt-icon"><i class="fa-solid fa-file-invoice"></i></div><div><p>INV-2461 sent to Acme Studio</p><span>2 hours ago</span></div></div>
+          <div class="dt-row"><div class="dt-icon"><i class="fa-solid fa-triangle-exclamation"></i></div><div><p>INV-2459 marked overdue</p><span>3 days ago</span></div></div>
+        </div>
+      </section>
+
+      <!-- INVOICES — CLIENT -->
+      <section class="dash-panel" data-role="client" id="panel-invoices-client">
+        <div class="dash-sub-head">Your invoices</div>
+        <table class="data-table">
+          <thead><tr><th>Invoice</th><th>Issued</th><th>Amount</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>INV-2461</td><td>Jul 26, 2026</td><td>$4,280.00</td><td><span class="status-pill done">Paid</span></td></tr>
+            <tr><td>INV-2459</td><td>Jul 15, 2026</td><td>$860.00</td><td><span class="status-pill pending">Overdue</span></td></tr>
+            <tr><td>INV-2457</td><td>Jul 5, 2026</td><td>$610.00</td><td><span class="status-pill pending">Pending</span></td></tr>
+          </tbody>
+        </table>
+
+        <div class="dash-sub-head">Your invoice summary</div>
+        <div class="kpi-strip">
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-solid fa-circle-check"></i></div><span class="kpi-trend up">1</span></div><div class="kpi-value">$4,280</div><div class="kpi-label">Paid this month</div></div>
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-solid fa-triangle-exclamation"></i></div><span class="kpi-trend down">2 due</span></div><div class="kpi-value">$1,470</div><div class="kpi-label">Outstanding</div></div>
+        </div>
+
+        <div class="dash-sub-head">Next due date</div>
+        <div class="visual-row">
+          <div class="visual-card"><h4>INV-2459 — due in</h4>
+            <div class="mini-bar-row"><span>Overdue</span><div class="mini-bar-track"><div class="mini-bar-fill" style="width:100%;"></div></div><span>5 days</span></div>
+          </div>
+        </div>
+
+        <div class="dash-sub-head">Recent invoice activity</div>
+        <div class="dash-timeline">
+          <div class="dt-row"><div class="dt-icon"><i class="fa-solid fa-file-invoice"></i></div><div><p>New invoice received: INV-2459</p><span>3 days ago</span></div></div>
+          <div class="dt-row"><div class="dt-icon"><i class="fa-solid fa-circle-check"></i></div><div><p>INV-2461 marked paid</p><span>2 hours ago</span></div></div>
+        </div>
+      </section>
+
+      <!-- PAYMENTS — ADMIN -->
+      <section class="dash-panel" data-role="admin" id="panel-payments-admin">
+        <div class="dash-sub-head">Payment volume</div>
+        <div class="kpi-strip">
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-solid fa-credit-card"></i></div><span class="kpi-trend up">+8.2%</span></div><div class="kpi-value">$88,140</div><div class="kpi-label">Collected this month</div></div>
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-solid fa-clock"></i></div><span class="kpi-trend down">-0.3d</span></div><div class="kpi-value">1.4 days</div><div class="kpi-label">Avg. time to paid</div></div>
+        </div>
+
+        <div class="dash-sub-head">Payment history</div>
+        <table class="data-table">
+          <thead><tr><th>Date</th><th>Client</th><th>Amount</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Jul 29, 2026</td><td>Acme Studio</td><td>$4,280.00</td><td><span class="status-pill done">Confirmed</span></td></tr>
+            <tr><td>Jul 27, 2026</td><td>Bright Path LLC</td><td>$1,120.00</td><td><span class="status-pill done">Confirmed</span></td></tr>
+            <tr><td>Jul 20, 2026</td><td>Vector Labs</td><td>$610.00</td><td><span class="status-pill pending">Pending</span></td></tr>
+          </tbody>
+        </table>
+
+        <div class="dash-sub-head">Recent activity</div>
+        <div class="dash-timeline">
+          <div class="dt-row"><div class="dt-icon"><i class="fa-solid fa-credit-card"></i></div><div><p>Card payment confirmed — Acme Studio</p><span>2 hours ago</span></div></div>
+        </div>
+
+        <div class="dash-sub-head">Method mix</div>
+        <div class="visual-row">
+          <div class="visual-card"><h4>Where revenue comes from</h4>
+            <div class="mini-bar-row"><span>Card</span><div class="mini-bar-track"><div class="mini-bar-fill" style="width:64%;"></div></div><span>64%</span></div>
+            <div class="mini-bar-row"><span>Bank</span><div class="mini-bar-track"><div class="mini-bar-fill" style="width:22%;"></div></div><span>22%</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAYMENTS — CLIENT -->
+      <section class="dash-panel" data-role="client" id="panel-payments-client">
+        <div class="dash-sub-head">Your payments</div>
+        <div class="kpi-strip">
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-solid fa-credit-card"></i></div><span class="kpi-trend up">This month</span></div><div class="kpi-value">$4,280</div><div class="kpi-label">Total paid</div></div>
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-solid fa-clock"></i></div><span class="kpi-trend up">On time</span></div><div class="kpi-value">1 of 3</div><div class="kpi-label">Invoices paid on time</div></div>
+        </div>
+
+        <div class="dash-sub-head">Your payment history</div>
+        <table class="data-table">
+          <thead><tr><th>Date</th><th>Invoice</th><th>Amount</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Jul 29, 2026</td><td>INV-2461</td><td>$4,280.00</td><td><span class="status-pill done">Confirmed</span></td></tr>
+            <tr><td>Jul 20, 2026</td><td>INV-2457</td><td>$610.00</td><td><span class="status-pill pending">Pending</span></td></tr>
+          </tbody>
+        </table>
+
+        <div class="dash-sub-head">Recent activity</div>
+        <div class="dash-timeline">
+          <div class="dt-row"><div class="dt-icon"><i class="fa-solid fa-credit-card"></i></div><div><p>Payment sent for INV-2461</p><span>2 hours ago</span></div></div>
+          <div class="dt-row"><div class="dt-icon"><i class="fa-solid fa-clock"></i></div><div><p>Payment for INV-2457 is pending confirmation</p><span>2 days ago</span></div></div>
+        </div>
+      </section>
+
+      <!-- SUBSCRIPTIONS — ADMIN -->
+      <section class="dash-panel" data-role="admin" id="panel-subscriptions-admin">
+        <div class="dash-sub-head">Subscription health</div>
+        <div class="kpi-strip">
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-solid fa-rotate"></i></div><span class="kpi-trend up">+318</span></div><div class="kpi-value">1,942</div><div class="kpi-label">Active subscriptions</div></div>
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-solid fa-user-plus"></i></div><span class="kpi-trend up">+3</span></div><div class="kpi-value">12</div><div class="kpi-label">New this week</div></div>
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-solid fa-percent"></i></div><span class="kpi-trend down">-0.4%</span></div><div class="kpi-value">1.8%</div><div class="kpi-label">Involuntary churn</div></div>
+        </div>
+
+        <div class="dash-sub-head">Renewal calendar</div>
+        <table class="data-table">
+          <thead><tr><th>Client</th><th>Plan</th><th>Renews</th></tr></thead>
+          <tbody>
+            <tr><td>Acme Studio</td><td>Growth</td><td>Aug 3, 2026</td></tr>
+            <tr><td>Halo Media</td><td>Growth</td><td>Aug 9, 2026</td></tr>
+          </tbody>
+        </table>
+
+        <div class="dash-sub-head">Retry outcomes</div>
+        <div class="visual-row">
+          <div class="visual-card"><h4>Failed payment recovery</h4>
+            <div class="mini-bar-row"><span>Recovered</span><div class="mini-bar-track"><div class="mini-bar-fill" style="width:82%;"></div></div><span>82%</span></div>
+            <div class="mini-bar-row"><span>Lost</span><div class="mini-bar-track"><div class="mini-bar-fill" style="width:18%;"></div></div><span>18%</span></div>
+          </div>
+        </div>
+
+        <div class="dash-sub-head">Recent activity</div>
+        <div class="dash-timeline">
+          <div class="dt-row"><div class="dt-icon"><i class="fa-solid fa-rotate"></i></div><div><p>Subscription renewed — Nord Digital</p><span>2 days ago</span></div></div>
+        </div>
+      </section>
+
+      <!-- SUBSCRIPTIONS — CLIENT -->
+      <section class="dash-panel" data-role="client" id="panel-subscriptions-client">
+        <div class="dash-sub-head">Your subscription</div>
+        <div class="kpi-strip">
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-solid fa-rotate"></i></div><span class="kpi-trend up">Monthly</span></div><div class="kpi-value">Growth Plan</div><div class="kpi-label">Next charge Aug 15</div></div>
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-solid fa-sack-dollar"></i></div><span class="kpi-trend up">$249/mo</span></div><div class="kpi-value">Growth</div><div class="kpi-label">Current plan cost</div></div>
+        </div>
+
+        <div class="dash-sub-head">Plan details</div>
+        <table class="data-table">
+          <thead><tr><th>Feature</th><th>Included</th></tr></thead>
+          <tbody>
+            <tr><td>Team seats</td><td>Up to 15</td></tr>
+            <tr><td>Invoices per month</td><td>Unlimited</td></tr>
+            <tr><td>Support</td><td>Priority</td></tr>
+          </tbody>
+        </table>
+
+        <div class="dash-sub-head">Billing cycle</div>
+        <div class="visual-row">
+          <div class="visual-card"><h4>Current period progress</h4>
+            <div class="mini-bar-row"><span>Days used</span><div class="mini-bar-track"><div class="mini-bar-fill" style="width:60%;"></div></div><span>18/30</span></div>
+          </div>
+        </div>
+
+        <div class="dash-sub-head">Recent activity</div>
+        <div class="dash-timeline">
+          <div class="dt-row"><div class="dt-icon"><i class="fa-solid fa-rotate"></i></div><div><p>Growth Plan renewed automatically</p><span>18 days ago</span></div></div>
+        </div>
+      </section>
+
+      <!-- CLIENTS (Admin only) -->
+      <section class="dash-panel" data-role="admin" id="panel-clients">
+        <div class="dash-sub-head">Client base</div>
+        <div class="kpi-strip">
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-solid fa-users"></i></div><span class="kpi-trend up">+4</span></div><div class="kpi-value">48</div><div class="kpi-label">Active clients</div></div>
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-solid fa-star"></i></div><span class="kpi-trend up">Top</span></div><div class="kpi-value">Acme Studio</div><div class="kpi-label">Highest billed</div></div>
+        </div>
+        <div class="dash-sub-head">All clients</div>
+        <table class="data-table">
+          <thead><tr><th>Client</th><th>Total billed</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Acme Studio</td><td>$48,210</td><td><span class="status-pill done">Active</span></td></tr>
+            <tr><td>Bright Path LLC</td><td>$21,900</td><td><span class="status-pill done">Active</span></td></tr>
+            <tr><td>Nord Digital</td><td>$8,650</td><td><span class="status-pill pending">Overdue</span></td></tr>
+          </tbody>
+        </table>
+        <div class="dash-sub-head">Client mix</div>
+        <div class="visual-row">
+          <div class="visual-card"><h4>By plan</h4>
+            <div class="mini-bar-row"><span>Growth</span><div class="mini-bar-track"><div class="mini-bar-fill" style="width:70%;"></div></div><span>70%</span></div>
+            <div class="mini-bar-row"><span>Starter</span><div class="mini-bar-track"><div class="mini-bar-fill" style="width:30%;"></div></div><span>30%</span></div>
+          </div>
+        </div>
+        <div class="dash-sub-head">Recent client activity</div>
+        <div class="dash-timeline">
+          <div class="dt-row"><div class="dt-icon"><i class="fa-solid fa-user-plus"></i></div><div><p>New client onboarded: Vector Labs</p><span>4 days ago</span></div></div>
+        </div>
+      </section>
+
+      <!-- WALLET (Client only) -->
+      <section class="dash-panel" data-role="client" id="panel-wallet">
+        <div class="dash-sub-head">Saved payment methods</div>
+        <div class="kpi-strip">
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-brands fa-cc-visa"></i></div><span class="kpi-trend up">Default</span></div><div class="kpi-value">Visa •••• 4242</div><div class="kpi-label">Expires 08/28</div></div>
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-brands fa-cc-paypal"></i></div><span class="kpi-trend up">Active</span></div><div class="kpi-value">PayPal</div><div class="kpi-label">connected@example.com</div></div>
+        </div>
+        <div class="dash-sub-head">Payment history</div>
+        <table class="data-table">
+          <thead><tr><th>Date</th><th>Amount</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Jul 29, 2026</td><td>$4,280.00</td><td><span class="status-pill done">Confirmed</span></td></tr>
+            <tr><td>Jul 20, 2026</td><td>$610.00</td><td><span class="status-pill pending">Pending</span></td></tr>
+          </tbody>
+        </table>
+        <div class="dash-sub-head">Spend breakdown</div>
+        <div class="visual-row">
+          <div class="visual-card"><h4>By category</h4>
+            <div class="mini-bar-row"><span>Subscriptions</span><div class="mini-bar-track"><div class="mini-bar-fill" style="width:55%;"></div></div><span>55%</span></div>
+            <div class="mini-bar-row"><span>One-off</span><div class="mini-bar-track"><div class="mini-bar-fill" style="width:45%;"></div></div><span>45%</span></div>
+          </div>
+        </div>
+        <div class="dash-sub-head">Recent activity</div>
+        <div class="dash-timeline">
+          <div class="dt-row"><div class="dt-icon"><i class="fa-solid fa-credit-card"></i></div><div><p>Payment sent for INV-2461</p><span>2 hours ago</span></div></div>
+        </div>
+      </section>
+
+      <!-- INSIGHTS — ADMIN -->
+      <section class="dash-panel" data-role="admin" id="panel-insights-admin">
+        <div class="dash-sub-head">Cash flow summary</div>
+        <table class="data-table">
+          <thead><tr><th>Period</th><th>Revenue</th><th>Refunds</th><th>Net</th></tr></thead>
+          <tbody>
+            <tr><td>This month</td><td>$92,410</td><td>$1,240</td><td>$91,170</td></tr>
+            <tr><td>Last month</td><td>$77,930</td><td>$980</td><td>$76,950</td></tr>
+          </tbody>
+        </table>
+        <div class="dash-sub-head">Key ratios</div>
+        <div class="kpi-strip">
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-solid fa-chart-line"></i></div><span class="kpi-trend up">+18.6%</span></div><div class="kpi-value">MRR growth</div><div class="kpi-label">Month over month</div></div>
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-solid fa-percent"></i></div><span class="kpi-trend down">-0.4%</span></div><div class="kpi-value">1.8%</div><div class="kpi-label">Churn rate</div></div>
+        </div>
+        <div class="dash-sub-head">Revenue mix</div>
+        <div class="visual-row">
+          <div class="visual-card"><h4>Recurring vs one-off</h4>
+            <div class="mini-bar-row"><span>Recurring</span><div class="mini-bar-track"><div class="mini-bar-fill" style="width:71%;"></div></div><span>71%</span></div>
+            <div class="mini-bar-row"><span>One-off</span><div class="mini-bar-track"><div class="mini-bar-fill" style="width:29%;"></div></div><span>29%</span></div>
+          </div>
+        </div>
+        <div class="dash-sub-head">Notable events</div>
+        <div class="dash-timeline">
+          <div class="dt-row"><div class="dt-icon"><i class="fa-solid fa-chart-line"></i></div><div><p>MRR crossed $90K for the first time</p><span>This week</span></div></div>
+        </div>
+      </section>
+
+      <!-- INSIGHTS — CLIENT -->
+      <section class="dash-panel" data-role="client" id="panel-insights-client">
+        <div class="dash-sub-head">Your spend over time</div>
+        <table class="data-table">
+          <thead><tr><th>Period</th><th>Spent</th><th>Refunds</th><th>Net</th></tr></thead>
+          <tbody>
+            <tr><td>This month</td><td>$4,280</td><td>$0</td><td>$4,280</td></tr>
+            <tr><td>Last month</td><td>$3,610</td><td>$60</td><td>$3,550</td></tr>
+          </tbody>
+        </table>
+        <div class="dash-sub-head">Your ratios</div>
+        <div class="kpi-strip">
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-solid fa-chart-line"></i></div><span class="kpi-trend up">+18.6%</span></div><div class="kpi-value">Spend growth</div><div class="kpi-label">Month over month</div></div>
+          <div class="kpi-cell"><div class="kpi-top"><div class="kpi-icon"><i class="fa-solid fa-clock"></i></div><span class="kpi-trend up">1.4 days</span></div><div class="kpi-value">Avg. pay time</div><div class="kpi-label">From invoice date</div></div>
+        </div>
+        <div class="dash-sub-head">Spend mix</div>
+        <div class="visual-row">
+          <div class="visual-card"><h4>Recurring vs one-off</h4>
+            <div class="mini-bar-row"><span>Recurring</span><div class="mini-bar-track"><div class="mini-bar-fill" style="width:55%;"></div></div><span>55%</span></div>
+            <div class="mini-bar-row"><span>One-off</span><div class="mini-bar-track"><div class="mini-bar-fill" style="width:45%;"></div></div><span>45%</span></div>
+          </div>
+        </div>
+        <div class="dash-sub-head">Notable events</div>
+        <div class="dash-timeline">
+          <div class="dt-row"><div class="dt-icon"><i class="fa-solid fa-chart-line"></i></div><div><p>Your spend increased this month vs last</p><span>This week</span></div></div>
+        </div>
+      </section>
+
+      <!-- SETTINGS -->
+      <section class="dash-panel" id="panel-settings">
+        <div class="dash-sub-head">Account settings</div>
+        <img src="assets/images/cloud-computing-illustration.webp" alt="Cloud computing illustration" style="width:100%;max-width:400px;height:140px;object-fit:cover;border-radius:12px;margin-bottom:20px;border:1px solid var(--line);">
+        <div class="settings-form">
+          <div class="field"><label>Email</label><input type="email" id="settingsEmail" readonly></div>
+          <div class="field"><label>Display name</label><input type="text" id="settingsName" placeholder="Your name"></div>
+          <div class="field"><label>Role</label><input type="text" id="settingsRole" readonly></div>
+          <button type="button" class="btn btn-primary" id="saveSettingsBtn">Save Changes</button>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/core.js"></script>
+<script src="assets/js/dashboard.js"></script>
+</body>
+</html>

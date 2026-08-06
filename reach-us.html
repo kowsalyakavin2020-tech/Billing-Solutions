@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reach Us — Talk to the Stackly Team</title>
+<meta name="description" content="Reach the Stackly team for support, partnerships, or enterprise sales. Live chat, email, phone, and our Gurugram office on the map.">
+<meta name="keywords" content="contact stackly, billing software support, stackly office, enterprise sales">
+<link rel="icon" href="assets/images/stackly-logo-cyan.webp">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/reach.css">
+
+</head>
+<body>
+  <div class="loader">
+    <img src="assets/images/stackly-logo-cyan.webp" alt="Stackly">
+    <div class="loader-ring"></div>
+    <p>Loading, please wait...</p>
+  </div>
+
+
+
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand"><img src="assets/images/stackly-logo-cyan.webp" alt="Stackly logo"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="story.html">Story</a></li>
+      <li>
+        <a href="platform.html">Platform <i class="fa-solid fa-chevron-down"></i></a>
+        <ul class="dropdown">
+          <li><a href="platform.html#invoicing"><i class="fa-solid fa-file-invoice"></i> Invoicing</a></li>
+          <li><a href="platform.html#payments"><i class="fa-solid fa-credit-card"></i> Payments</a></li>
+          <li><a href="platform.html#recurring"><i class="fa-solid fa-rotate"></i> Recurring Billing</a></li>
+          <li><a href="platform.html#insights"><i class="fa-solid fa-chart-pie"></i> Insights</a></li>
+        </ul>
+      </li>
+      <li><a href="plans.html">Plans</a></li>
+      <li><a href="reach-us.html">Reach Us</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="signin.html" class="btn btn-ghost btn-sm">Sign In</a>
+      <a href="get-access.html" class="btn btn-primary btn-sm">Get Access</a>
+    </div>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<nav class="mobile-menu">
+  <div class="mm-top">
+    <a href="index.html" class="brand"><img src="assets/images/stackly-logo-cyan.webp" alt="Stackly logo"></a>
+    <button class="mm-close" id="mobileMenuClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <a href="index.html">Home</a>
+  <a href="story.html">Story</a>
+  <div class="has-sub">
+    <a href="#">Platform <i class="fa-solid fa-chevron-down"></i></a>
+    <div class="sub-list">
+      <a href="platform.html#invoicing">Invoicing</a>
+      <a href="platform.html#payments">Payments</a>
+      <a href="platform.html#recurring">Recurring Billing</a>
+      <a href="platform.html#insights">Insights</a>
+    </div>
+  </div>
+  <a href="plans.html">Plans</a>
+  <a href="reach-us.html">Reach Us</a>
+  <div class="mobile-menu-actions">
+    <a href="signin.html" class="btn btn-ghost btn-block">Sign In</a>
+    <a href="get-access.html" class="btn btn-primary btn-block">Get Access</a>
+  </div>
+</nav>
+
+
+<main>
+
+<!-- 1. HERO -->
+<section class="reach-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i><span>Reach Us</span></div>
+    <h1 data-aos="fade-up">Talk to the Stackly team.</h1>
+    <p data-aos="fade-up" data-aos-delay="100">Support, partnerships or enterprise sales — reach us directly, no ticket queue required for the first response.</p>
+  </div>
+</section>
+
+<!-- 2. DIAGONAL FORM OVER IMAGE -->
+<section class="section" style="padding-top:20px;">
+  <div class="container">
+    <div class="diag-split" data-aos="fade-up">
+      <div class="ds-bg"><img src="assets/images/man-working-laptop-office.webp" alt="Stackly team member at work"></div>
+      <div class="ds-form">
+        <h2>Send a message</h2>
+        <p>We reply within one business day.</p>
+        <img src="assets/images/secure-payment-lock-icon.webp" alt="Secure payment lock icon" style="width:44px;height:44px;object-fit:contain;margin-bottom:16px;">
+        <form id="contactForm" novalidate>
+          <div class="field"><label for="cf-name">Full name</label><input type="text" id="cf-name" name="name" placeholder="Your name" required><span class="error-msg">Please enter your name.</span></div>
+          <div class="field"><label for="cf-email">Email address</label><input type="email" id="cf-email" name="email" placeholder="you@example.com" required><span class="error-msg">Please enter a valid email.</span></div>
+          <div class="field"><label for="cf-phone">Mobile number <span style="opacity:.6;">(optional)</span></label><input type="tel" id="cf-phone" name="phone" placeholder="+91 98765 43210"><span class="error-msg">Please enter a valid phone number.</span></div>
+          <div class="field"><label for="cf-subject">Subject</label>
+            <select id="cf-subject" name="subject" required>
+              <option value="">Select a topic</option><option>General support</option><option>Enterprise sales</option><option>Partnerships</option><option>Security disclosure</option>
+            </select>
+            <span class="error-msg">Please select a subject.</span>
+          </div>
+          <div class="field"><label for="cf-message">Message</label><textarea id="cf-message" name="message" placeholder="How can we help?" required></textarea><span class="error-msg">Please enter a message.</span></div>
+          <button type="submit" class="btn btn-primary btn-block">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. INFO STRIP — ANIMATED CARDS -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="contact-cards">
+      <div class="cc-card" style="--d:0s">
+        <div class="cc-icon"><i class="fa-solid fa-location-dot"></i></div>
+        <h4>Office</h4>
+        <p>MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil, Salem, Tamil Nadu 636008</p>
+        <a href="404.html" class="cc-link-hint">View on map </a>
+      </div>
+      <div class="cc-card" style="--d:.1s">
+        <div class="cc-icon"><i class="fa-solid fa-phone"></i></div>
+        <h4>Phone</h4>
+        <a href="404.html" id="cc-phone-text">+91 9644356574</a>
+        <a href="404.html" class="cc-link-hint">Call now </a>
+      </div>
+      <div class="cc-card" style="--d:.2s">
+        <div class="cc-icon"><i class="fa-solid fa-envelope"></i></div>
+        <h4>Email</h4>
+        <a href="404.html">info@stackly.com</a>
+        <a href="404.html" class="cc-link-hint">Send message </a>
+      </div>
+      <div class="cc-card" style="--d:.3s">
+        <div class="cc-icon"><i class="fa-solid fa-share-nodes"></i></div>
+        <h4>Social</h4>
+        <p>@stackly on every network</p>
+        <a href="404.html" class="cc-link-hint">Follow us </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. MAP STRIP -->
+<section class="section">
+  <div class="container">
+    <div class="section-head center" data-aos="fade-up"><div class="eyebrow">Visit us</div><h2 class="section-tag">Our Gurugram office welcomes partner visits.</h2></div>
+    <img src="assets/images/business-handshake-deal.webp" alt="Business partners closing a deal at the Stackly office" style="width:100%;max-width:700px;height:200px;object-fit:cover;border-radius:16px;margin:0 auto 30px;border:1px solid var(--line);display:block;" data-aos="fade-up">
+    <div class="map-strip" data-aos="fade-up"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1785926006107!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+  </div>
+</section>
+
+<!-- 5. SUPPORT TIMELINE -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head center" data-aos="fade-up"><div class="eyebrow">Support channels</div><h2 class="section-tag">Pick whichever's fastest for you.</h2></div>
+    <img src="assets/images/customer-support-call-center.webp" alt="Stackly customer support team at work" style="width:100%;max-width:760px;height:220px;object-fit:cover;border-radius:16px;margin:0 auto 40px;border:1px solid var(--line);display:block;" data-aos="fade-up">
+    <div class="support-track" data-aos="fade-up">
+      <div class="sup-item"><div class="sup-icon"><i class="fa-solid fa-comment-dots"></i></div><div class="sup-copy"><h4>Live chat</h4><p>In-app, 24/5 for Growth accounts — usually a reply within minutes.</p></div></div>
+      <div class="sup-item"><div class="sup-icon"><i class="fa-solid fa-book"></i></div><div class="sup-copy"><h4>Help center</h4><p>Self-serve guides covering invoicing, checkout and recurring billing.</p></div></div>
+      <div class="sup-item"><div class="sup-icon"><i class="fa-solid fa-envelope-open-text"></i></div><div class="sup-copy"><h4>Email</h4><p>info@stackly.com — one business day response.</p></div></div>
+      <div class="sup-item"><div class="sup-icon"><i class="fa-solid fa-phone-volume"></i></div><div class="sup-copy"><h4>Phone</h4><p>Reserved for Enterprise accounts, during business hours.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. STAT BELT — ANIMATED COUNT-UP -->
+<section class="section stat-anim-section">
+  <div class="container">
+    <div class="stat-anim-grid">
+      <div class="stat-anim-item" data-aos="fade-up">
+        <div class="sa-icon"><i class="fa-solid fa-clock"></i></div>
+        <strong class="sa-num" data-prefix="&lt;" data-target="1" data-suffix=" hr">&lt;0 hr</strong>
+        <span>Avg. Growth response</span>
+      </div>
+      <div class="stat-anim-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="sa-icon"><i class="fa-solid fa-comment-dots"></i></div>
+        <strong class="sa-num" data-target="24" data-suffix="/5">0/5</strong>
+        <span>Live chat coverage</span>
+      </div>
+      <div class="stat-anim-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="sa-icon"><i class="fa-solid fa-earth-asia"></i></div>
+        <strong class="sa-num" data-target="35" data-suffix="+">0+</strong>
+        <span>Countries supported</span>
+      </div>
+      <div class="stat-anim-item" data-aos="fade-up" data-aos-delay="300">
+        <div class="sa-icon"><i class="fa-solid fa-star"></i></div>
+        <strong class="sa-num" data-target="4.8" data-suffix="/5" data-decimal="1">0/5</strong>
+        <span>Support satisfaction</span>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 8. FAQ — CHAT STYLE -->
+<section class="section faq-chat-section">
+  <div class="container">
+    <div class="faq-chat-head" data-aos="fade-up">
+      <div class="eyebrow">FAQ</div>
+    </div>
+
+    <div class="faq-chat-window" data-aos="fade-up">
+      <div class="fc-thread" id="fcThread">
+        <div class="fc-empty" id="fcEmpty">Pick a question below to see the answer.</div>
+      </div>
+
+      <div class="fc-also">
+        <span class="fc-also-label">Also asked</span>
+        <div class="fc-list" id="fcList">
+          <button class="fc-q" data-q="What is Stackly, exactly?" data-a="Stackly is invoicing, payment processing, and recurring billing software built for teams who want revenue to run itself, with no hidden processing markup.">What is Stackly, exactly?</button>
+          <button class="fc-q" data-q="How is this different from a normal payment gateway?" data-a="A gateway just moves money. Stackly also handles invoicing, recurring billing, client portals, and tax-ready exports on top of payments.">How is this different from a normal payment gateway?</button>
+          <button class="fc-q" data-q="Do you charge extra on top of processing fees?" data-a="No. Processing rates are shown transparently at checkout with no added Stackly markup.">Do you charge extra on top of processing fees?</button>
+          <button class="fc-q" data-q="Can I switch plans later?" data-a="Yes, upgrade or downgrade anytime from account settings, prorated automatically.">Can I switch plans later?</button>
+          <button class="fc-q" data-q="Who is Stackly for?" data-a="Freelancers on Starter, growing teams on Growth, and finance departments on Enterprise with role-based access.">Who is Stackly for?</button>
+          <button class="fc-q" data-q="How long does setup take?" data-a="Most teams are sending their first invoice within a day of signing up, no integration work required.">How long does setup take?</button>
+          <button class="fc-q" data-q="What payment methods do you accept?" data-a="Card, or pay directly from a connected bank account.">What payment methods do you accept?</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. CTA — PANEL OVERLAY + FEATURES -->
+<section class="section cta-panel-section">
+  <div class="container">
+    <div class="cta-panel-media" data-aos="fade-up">
+      <img src="assets/images/boardroom-team-presentation.webp" alt="Team using Stackly">
+
+      <div class="cta-panel-box">
+        <h2>Try Stackly<br>for free</h2>
+        <p>Start your free trial with full access and your first 50 invoices free. Then decide if it's right for your business.</p>
+        <div class="cta-panel-actions">
+          <a href="404.html" class="btn btn-panel-primary">Try for free </a>
+          <a href="404.html" class="btn btn-panel-ghost">Talk to our team</a>
+        </div>
+        <div class="cta-panel-checks">
+          <span><i class="fa-solid fa-check"></i> Cancel anytime</span>
+          <span><i class="fa-solid fa-check"></i> No credit card required</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-panel-features" data-aos="fade-up" data-aos-delay="100">
+      <div class="cpf-item">
+        <i class="fa-solid fa-file-invoice"></i>
+        <h4>Complete invoicing system</h4>
+        <p>All invoices in one place, automated reminders, recurring billing.</p>
+      </div>
+      <div class="cpf-item">
+        <i class="fa-solid fa-users"></i>
+        <h4>Unlimited users</h4>
+        <p>Invite your whole team, no per-seat fees.</p>
+      </div>
+      <div class="cpf-item">
+        <i class="fa-solid fa-chart-line"></i>
+        <h4>Financial insights</h4>
+        <p>Real-time revenue tracking, exports, and forecasts.</p>
+      </div>
+      <div class="cpf-item">
+        <i class="fa-solid fa-headset"></i>
+        <h4>Full customer support</h4>
+        <p>Access to our support team 7 days a week.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer-folk">
+  <div class="sff-stripe">
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="container">
+    <div class="sff-top">
+      <div>
+        <a href="index.html"><img src="assets/images/stackly-logo-cyan.webp" alt="Stackly logo" class="sff-logo"></a>
+        <h2>Start 14-day free<br>trial on Stackly</h2>
+      </div>
+      <div class="sff-cta-group">
+        <a href="404.html" class="sff-btn-solid">Try for free</a>
+        <a href="404.html" class="sff-btn-outline">Get a demo</a>
+        
+      </div>
+    </div>
+
+    <div class="sff-cols">
+      <div class="sff-col">
+        <h4>Company</h4>
+        <a href="index.html">Home</a>
+        <a href="story.html">Story</a>
+        <a href="platform.html">Platform</a>
+        <a href="plans.html">Plans</a>
+        <a href="reach-us.html">Contact us</a>
+      </div>
+      
+      <div class="sff-col">
+        <h4>Use cases</h4>
+        <a href="404.html">Stackly for freelancers</a>
+        <a href="404.html">Stackly for agencies</a>
+        <a href="404.html">Stackly for retail</a>
+        <a href="404.html">Stackly for finance teams</a>
+      </div>
+      <div class="sff-col">
+          <h4>Reach Us</h4>
+          <a href="404.html">MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil, Salem, Tamil Nadu 636008</a>
+          <a href="404.html">+91 9644356574</a>
+          <a href="404.html">info@stackly.com</a>
+        </div>
+        
+      
+      
+    </div>
+
+    <div class="sff-bottom">
+      <span>© 2026 Stackly Technologies.</span>
+      <div class="sff-social">
+        <a href="404.html" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="404.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="404.html" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="404.html" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+<button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/contact.js"></script>
+<script>
+  const statObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        const el = entry.target;
+        const target = parseFloat(el.dataset.target);
+        const prefix = el.dataset.prefix || "";
+        const suffix = el.dataset.suffix || "";
+        const decimal = parseInt(el.dataset.decimal || "0");
+        let start = 0;
+        const duration = 1200;
+        const startTime = performance.now();
+        function tick(now){
+          const progress = Math.min((now - startTime) / duration, 1);
+          const value = target * progress;
+          el.textContent = prefix + value.toFixed(decimal) + suffix;
+          if(progress < 1) requestAnimationFrame(tick);
+          else el.textContent = prefix + target.toFixed(decimal) + suffix;
+        }
+        requestAnimationFrame(tick);
+        statObserver.unobserve(el);
+      }
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll(".sa-num").forEach(el => statObserver.observe(el));
+</script>
+<script>
+  const fcThread = document.getElementById("fcThread");
+  document.querySelectorAll(".fc-q").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const q = btn.dataset.q;
+      const a = btn.dataset.a;
+      fcThread.innerHTML = `
+        <div class="fc-bubble-q">${q}</div>
+        <div class="fc-bubble-a">
+          <div class="fc-avatar"><i class="fa-solid fa-asterisk"></i></div>
+          <p>${a}</p>
+        </div>
+      `;
+      document.querySelectorAll(".fc-q").forEach(b => b.classList.remove("answered"));
+      btn.classList.add("answered");
+    });
+  });
+</script>
+</body>
+</html>

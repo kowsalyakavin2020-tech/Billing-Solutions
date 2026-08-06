@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found — Stackly</title>
+<meta name="description" content="This page doesn't exist or has moved. Head back to the Stackly homepage or search for what you need.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/images/stackly-logo-cyan.webp">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<style>
+  .nf-wrap{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:140px 24px 80px;position:relative;overflow:hidden;}
+  .nf-code{font-family:var(--font-display);font-size:clamp(90px,16vw,180px);font-weight:800;line-height:1;color:#fff;position:relative;letter-spacing:4px;}
+  .nf-code .glitch-layer{position:absolute;top:0;left:0;width:100%;}
+  .nf-code .l1{color:var(--coral);clip-path:inset(0 0 92% 0);animation:gl1 2.4s infinite linear alternate-reverse;}
+  .nf-code .l2{color:var(--teal);clip-path:inset(88% 0 0 0);animation:gl2 2.1s infinite linear alternate-reverse;}
+  @keyframes gl1{0%{transform:translate(0,0);}20%{transform:translate(-3px,1px);}40%{transform:translate(3px,-1px);}60%{transform:translate(-2px,2px);}80%{transform:translate(2px,-2px);}100%{transform:translate(0,0);}}
+  @keyframes gl2{0%{transform:translate(0,0);}25%{transform:translate(3px,-2px);}50%{transform:translate(-3px,1px);}75%{transform:translate(2px,2px);}100%{transform:translate(0,0);}}
+  .nf-wrap h1{font-size:clamp(24px,3.4vw,36px);margin:24px 0 12px;}
+  .nf-wrap p{color:var(--paper-dim);max-width:460px;margin-bottom:34px;font-size:16px;}
+  .nf-actions{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-bottom:44px;}
+  .nf-search{width:100%;max-width:420px;position:relative;margin-bottom:40px;}
+  .nf-search input{width:100%;padding:14px 46px 14px 18px;border-radius:10px;border:1px solid var(--line);background:var(--ink-2);color:#fff;font-size:14.5px;}
+  .nf-search input:focus{outline:none;border-color:var(--coral);}
+  .nf-search i{position:absolute;right:16px;top:50%;transform:translateY(-50%);color:var(--paper-dim);}
+  .nf-quick{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;}
+  .nf-quick a{padding:9px 18px;border:1px solid var(--line);border-radius:20px;font-size:13.5px;color:var(--paper-dim);transition:.25s;}
+  .nf-quick a:hover{border-color:var(--line-2);color:var(--coral);}
+</style>
+
+
+
+
+
+<main class="nf-wrap">
+  <div class="nf-code">404<span class="glitch-layer l1">404</span><span class="glitch-layer l2">404</span></div>
+  <h1>This invoice took a wrong turn.</h1>
+  <p>The link you followed might be broken, or the page has been renamed. Let's get you back on track.</p>
+  <div class="nf-actions">
+    <a href="index.html" class="btn btn-primary"><i class="fa-solid fa-house"></i> Back to Home</a>
+    <button class="btn btn-ghost" id="goBackBtn"><i class="fa-solid fa-arrow-left"></i> Go Back</button>
+  </div>
+  
+  
+</main>
+
+
+<button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+<script src="assets/js/core.js"></script>
+<script>
+  document.getElementById("goBackBtn")?.addEventListener("click", () => {
+    if (window.history.length > 1) window.history.back(); else window.location.href = "index.html";
+  });
+  document.getElementById("nfSearchForm")?.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const q = document.getElementById("nfSearchInput").value.trim().toLowerCase();
+    const routes = { invoic: "platform.html#invoicing", payment: "platform.html#payments", recur: "platform.html#recurring", insight: "platform.html#insights",
+      plan: "plans.html", story: "story.html", reach: "reach-us.html", sign: "signin.html", access: "get-access.html", dashboard: "dashboard.html" };
+    const hit = Object.keys(routes).find(k => q.includes(k));
+    window.location.href = hit ? routes[hit] : "index.html";
+  });
+</script>
+</body>
+</html>

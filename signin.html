@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign In — Stackly</title>
+<meta name="description" content="Sign in to your Stackly dashboard to manage invoices, payments, subscriptions and cash flow.">
+<meta name="keywords" content="stackly sign in, billing dashboard login">
+<link rel="icon" href="assets/images/stackly-logo-cyan.webp">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/auth.css">
+</head>
+<body>
+  <div class="loader">
+    <img src="assets/images/stackly-logo-cyan.webp" alt="Stackly">
+    <div class="loader-ring"></div>
+    <p>Loading, please wait...</p>
+  </div>
+
+<!-- LOGIN PAGE — DARK ILLUSTRATION SPLIT -->
+<div class="auth-stage-rl">
+  <div class="rl-left">
+    <a href="index.html" class="rl-back"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+
+    <div class="rl-illustration">
+      <div class="rl-blob"></div>
+      <svg viewBox="0 0 200 180" width="220" height="200">
+        <polygon points="40,90 100,55 160,90 160,150 40,150" fill="var(--ink-2)"/>
+        <rect x="60" y="105" width="24" height="24" fill="#fff"/>
+        <rect x="118" y="105" width="24" height="24" fill="#fff"/>
+        <rect x="92" y="118" width="16" height="32" fill="var(--ink)"/>
+        <circle cx="35" cy="70" r="12" fill="#fff"/>
+        <line x1="35" y1="82" x2="35" y2="150" stroke="#fff" stroke-width="2"/>
+        <g transform="translate(105,25) rotate(18)">
+          <rect x="0" y="0" width="70" height="90" rx="4" fill="#fff"/>
+          <line x1="10" y1="18" x2="45" y2="18" stroke="var(--ink)" stroke-width="3"/>
+          <line x1="10" y1="32" x2="60" y2="32" stroke="#ccc" stroke-width="2"/>
+          <line x1="10" y1="42" x2="60" y2="42" stroke="#ccc" stroke-width="2"/>
+          <line x1="10" y1="52" x2="60" y2="52" stroke="#ccc" stroke-width="2"/>
+          <line x1="10" y1="62" x2="45" y2="62" stroke="#ccc" stroke-width="2"/>
+        </g>
+      </svg>
+    </div>
+
+    <h2>Welcome back to<br>Stackly</h2>
+    <p>Access your invoices, manage payments, and pick up right where you left off.</p>
+  </div>
+
+  <div class="rl-right">
+    <div class="rl-form-wrap">
+      <span class="rl-eyebrow">Log in</span>
+      <h1>Welcome back</h1>
+      <p class="rl-sub">Log in to continue to your account.</p>
+
+      <form id="loginForm" novalidate>
+        <div class="rl-field">
+          <label for="rl-role">Log in as <span>*</span></label>
+          <select id="rl-role" name="role" required>
+            <option value="">Select role</option>
+            <option value="admin">Admin</option>
+            <option value="client">Client</option>
+          </select>
+          <span class="rl-error-msg">Please select a role.</span>
+        </div>
+
+        <div class="rl-field">
+          <label for="rl-email">Email address <span>*</span></label>
+          <input type="email" id="rl-email" name="email" required>
+          <span class="rl-error-msg">Please enter a valid email.</span>
+        </div>
+
+        <div class="rl-field pw-field">
+          <label for="rl-password">Password <span>*</span></label>
+          <input type="password" id="rl-password" name="password" required minlength="8">
+          <button type="button" class="rl-pw-toggle" data-target="rl-password"><i class="fa-solid fa-eye"></i></button>
+          <span class="rl-error-msg">Incorrect email or password.</span>
+        </div>
+
+        <div class="rl-meta-row">
+          <label class="rl-check"><input type="checkbox" id="rl-remember"> Remember me</label>
+          <a href="404.html">Forgot password?</a>
+        </div>
+
+        <button type="button" id="loginSubmitBtn" class="rl-submit"><i class="fa-solid fa-arrow-right-to-bracket"></i> Log In</button>
+      </form>
+
+      <p class="rl-switch">Don't have an account? <a href="get-access.html">Sign Up</a></p>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/core.js"></script>
+<script src="assets/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Access — Create Your Free Stackly Account</title>
+<meta name="description" content="Create a free Stackly account in under a minute and start invoicing and accepting payments today.">
+<meta name="keywords" content="stackly signup, create billing account, register invoicing account">
+<link rel="icon" href="assets/images/stackly-logo-cyan.webp">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/auth.css">
+</head>
+<body>
+
+<div class="loader">
+    <img src="assets/images/stackly-logo-cyan.webp" alt="Stackly">
+    <div class="loader-ring"></div>
+    <p>Loading, please wait...</p>
+  </div>
+
+<!-- SIGNUP PAGE — DARK ILLUSTRATION SPLIT -->
+<div class="auth-stage-rl">
+  <div class="rl-left">
+    <a href="index.html" class="rl-back"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+
+    <div class="rl-illustration">
+      <div class="rl-blob"></div>
+      <svg viewBox="0 0 200 180" width="220" height="200">
+        <polygon points="40,90 100,55 160,90 160,150 40,150" fill="var(--ink-2)"/>
+        <rect x="60" y="105" width="24" height="24" fill="#fff"/>
+        <rect x="118" y="105" width="24" height="24" fill="#fff"/>
+        <rect x="92" y="118" width="16" height="32" fill="var(--ink)"/>
+        <circle cx="35" cy="70" r="12" fill="#fff"/>
+        <line x1="35" y1="82" x2="35" y2="150" stroke="#fff" stroke-width="2"/>
+        <g transform="translate(105,25) rotate(18)">
+          <rect x="0" y="0" width="70" height="90" rx="4" fill="#fff"/>
+          <line x1="10" y1="18" x2="45" y2="18" stroke="var(--ink)" stroke-width="3"/>
+          <line x1="10" y1="32" x2="60" y2="32" stroke="#ccc" stroke-width="2"/>
+          <line x1="10" y1="42" x2="60" y2="42" stroke="#ccc" stroke-width="2"/>
+          <line x1="10" y1="52" x2="60" y2="52" stroke="#ccc" stroke-width="2"/>
+          <line x1="10" y1="62" x2="45" y2="62" stroke="#ccc" stroke-width="2"/>
+        </g>
+      </svg>
+    </div>
+
+    <h2>No card, no KYC<br>to start</h2>
+    <p>Send your first invoice in under two minutes. Free forever on the Starter plan.</p>
+  </div>
+
+  <div class="rl-right">
+    <div class="rl-form-wrap">
+      <span class="rl-eyebrow">Sign up</span>
+      <h1>Create your account</h1>
+      <p class="rl-sub">Start with the free Starter plan — upgrade anytime.</p>
+
+      <form id="signupForm" novalidate>
+        <div class="rl-field">
+          <label for="su-role">Sign up as <span>*</span></label>
+          <select id="su-role" name="role" required>
+            <option value="">Select role</option>
+            <option value="admin">Admin</option>
+            <option value="client">Client</option>
+          </select>
+          <span class="rl-error-msg">Please select a role.</span>
+        </div>
+
+        <div class="rl-field">
+          <label for="su-name">Full name <span>*</span></label>
+          <input type="text" id="su-name" name="name" required>
+          <span class="rl-error-msg">Please enter your name.</span>
+        </div>
+
+        <div class="rl-field">
+          <label for="su-email">Email address <span>*</span></label>
+          <input type="email" id="su-email" name="email" required>
+          <span class="rl-error-msg">Please enter a valid email.</span>
+        </div>
+
+        <div class="rl-field pw-field">
+          <label for="su-password">Password <span>*</span></label>
+          <input type="password" id="su-password" name="password" required minlength="8">
+          <button type="button" class="rl-pw-toggle" data-target="su-password"><i class="fa-solid fa-eye"></i></button>
+          <div class="rl-pw-strength"><div class="rl-pw-strength-bar" id="pwStrengthBar"></div></div>
+          <span class="rl-error-msg">Password must be at least 8 characters.</span>
+        </div>
+
+        <div class="rl-field pw-field">
+          <label for="su-confirm">Confirm password <span>*</span></label>
+          <input type="password" id="su-confirm" name="confirm" required>
+          <button type="button" class="rl-pw-toggle" data-target="su-confirm"><i class="fa-solid fa-eye"></i></button>
+          <span class="rl-error-msg">Passwords do not match.</span>
+        </div>
+
+        <div class="rl-meta-row rl-meta-single">
+          <label class="rl-check">
+            <input type="checkbox" id="su-terms" required>
+            I agree to the <a href="404.html">Terms</a> &amp; <a href="404.html">Privacy Policy</a>
+          </label>
+        </div>
+
+        <button type="button" id="signupSubmitBtn" class="rl-submit"><i class="fa-solid fa-user-plus"></i> Create Free Account</button>
+      </form>
+
+      <div class="rl-divider">or continue with</div>
+      <div class="rl-oauth-row">
+        <a href="404.html" class="rl-oauth-btn"><i class="fa-brands fa-google"></i> Google</a>
+        <a href="404.html" class="rl-oauth-btn"><i class="fa-brands fa-microsoft"></i> Microsoft</a>
+      </div>
+
+      <p class="rl-switch">Already have an account? <a href="signin.html">Sign in</a></p>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/core.js"></script>
+<script src="assets/js/auth.js"></script>
+</body>
+</html>

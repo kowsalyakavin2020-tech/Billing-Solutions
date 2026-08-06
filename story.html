@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Story — Why We Built Stackly</title>
+<meta name="description" content="Stackly was built by ex-agency operators who wanted invoicing and payments to live in one place. Learn our story, values and team.">
+<meta name="keywords" content="stackly story, billing software company, invoicing team, payments platform mission">
+<link rel="icon" href="assets/images/stackly-logo-cyan.webp">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/story.css">
+
+</head>
+<body>
+  <div class="loader">
+    <img src="assets/images/stackly-logo-cyan.webp" alt="Stackly">
+    <div class="loader-ring"></div>
+    <p>Loading, please wait...</p>
+  </div>
+
+
+
+
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand"><img src="assets/images/stackly-logo-cyan.webp" alt="Stackly logo"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="story.html">Story</a></li>
+      <li>
+        <a href="platform.html">Platform <i class="fa-solid fa-chevron-down"></i></a>
+        <ul class="dropdown">
+          <li><a href="platform.html#invoicing"><i class="fa-solid fa-file-invoice"></i> Invoicing</a></li>
+          <li><a href="platform.html#payments"><i class="fa-solid fa-credit-card"></i> Payments</a></li>
+          <li><a href="platform.html#recurring"><i class="fa-solid fa-rotate"></i> Recurring Billing</a></li>
+          <li><a href="platform.html#insights"><i class="fa-solid fa-chart-pie"></i> Insights</a></li>
+        </ul>
+      </li>
+      <li><a href="plans.html">Plans</a></li>
+      <li><a href="reach-us.html">Reach Us</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="signin.html" class="btn btn-ghost btn-sm">Sign In</a>
+      <a href="get-access.html" class="btn btn-primary btn-sm">Get Access</a>
+    </div>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<nav class="mobile-menu">
+  <div class="mm-top">
+    <a href="index.html" class="brand"><img src="assets/images/stackly-logo-cyan.webp" alt="Stackly logo"></a>
+    <button class="mm-close" id="mobileMenuClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <a href="index.html">Home</a>
+  <a href="story.html">Story</a>
+  <div class="has-sub">
+    <a href="#">Platform <i class="fa-solid fa-chevron-down"></i></a>
+    <div class="sub-list">
+      <a href="platform.html#invoicing">Invoicing</a>
+      <a href="platform.html#payments">Payments</a>
+      <a href="platform.html#recurring">Recurring Billing</a>
+      <a href="platform.html#insights">Insights</a>
+    </div>
+  </div>
+  <a href="plans.html">Plans</a>
+  <a href="reach-us.html">Reach Us</a>
+  <div class="mobile-menu-actions">
+    <a href="signin.html" class="btn btn-ghost btn-block">Sign In</a>
+    <a href="get-access.html" class="btn btn-primary btn-block">Get Access</a>
+  </div>
+</nav>
+
+
+<main>
+
+<!-- 1. HERO — SPLIT -->
+<section class="story-hero-split">
+  <div class="container shsp-grid">
+
+    <div class="shsp-content">
+      <div class="breadcrumb" data-aos="fade-up"><a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i><span>Story</span></div>
+      <h1 class="shsp-title" data-aos="fade-up" data-aos-delay="100">We built the billing tool we wished existed.</h1>
+      <p class="shsp-sub" data-aos="fade-up" data-aos-delay="200">Stackly started when three ex-agency operators got tired of chasing invoices across spreadsheets and email threads. Today it bills for 24,000+ businesses.</p>
+      <div class="shsp-stats" data-aos="fade-up" data-aos-delay="300">
+        <div><strong>2020</strong><span>Founded</span></div>
+        <div><strong>24K+</strong><span>Businesses</span></div>
+        <div><strong>35+</strong><span>Countries</span></div>
+      </div>
+    </div>
+
+    <div class="shsp-media" data-aos="fade-up" data-aos-delay="150">
+      <div class="shsp-blob">
+        <img src="assets/images/boardroom-team-presentation.webp" alt="Stackly team collaborating">
+      </div>
+      <div class="shsp-badge">
+        <i class="fa-solid fa-arrow-trend-up"></i> Billing for 24,000+ businesses
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 2. STICKY-IMAGE INTRO — POSTER STYLE -->
+<section class="section sticky-intro-poster">
+
+  <!-- hidden SVG clip path definition for scalloped edge -->
+  <svg width="0" height="0" style="position:absolute;">
+    <defs>
+      <clipPath id="scallopClip2" clipPathUnits="objectBoundingBox">
+        <path d="M0,0.02
+          a0.0833,0.02 0 0,1 0.1667,0
+          a0.0833,0.02 0 0,1 0.1667,0
+          a0.0833,0.02 0 0,1 0.1667,0
+          a0.0833,0.02 0 0,1 0.1667,0
+          a0.0833,0.02 0 0,1 0.1667,0
+          a0.0833,0.02 0 0,1 0.1667,0
+          L1,0.98
+          a0.0833,0.02 0 0,1 -0.1667,0
+          a0.0833,0.02 0 0,1 -0.1667,0
+          a0.0833,0.02 0 0,1 -0.1667,0
+          a0.0833,0.02 0 0,1 -0.1667,0
+          a0.0833,0.02 0 0,1 -0.1667,0
+          a0.0833,0.02 0 0,1 -0.1667,0
+          Z"/>
+      </clipPath>
+    </defs>
+  </svg>
+
+  <div class="container">
+    <div class="sip-card" data-aos="fade-up">
+      <div class="sip-grain"></div>
+
+      <div class="sip-inner">
+
+        <div class="sip-media">
+          <div class="sip-star">
+            <svg viewBox="0 0 40 40"><path d="M20 0 L23 15 L38 12 L26 22 L34 35 L20 27 L6 35 L14 22 L2 12 L17 15 Z"/></svg>
+          </div>
+          <div class="sip-photo-frame">
+            <img src="assets/images/team-collaboration-meeting.webp" alt="Stackly team collaborating">
+          </div>
+          <svg class="sip-doodle" viewBox="0 0 120 120" fill="none">
+            <circle cx="40" cy="60" r="34" stroke="currentColor" stroke-width="1"/>
+            <circle cx="70" cy="45" r="20" stroke="currentColor" stroke-width="1"/>
+            <circle cx="80" cy="80" r="14" stroke="currentColor" stroke-width="1"/>
+          </svg>
+        </div>
+
+        <div class="sip-copy">
+          <div class="sip-eyebrow">HOW WE THINK</div>
+          <h2 class="sip-heading">
+            BUILT FOR<br>
+            THE PEOPLE<br>
+            WHO SEND<br>
+            THE INVOICE
+          </h2>
+
+          <div class="sip-blocks">
+            <div class="sip-block">
+              <span class="sip-tag">Our mission</span>
+              <h3>Make getting paid the easiest part of running a business.</h3>
+              <p>Most billing tools were built for accountants. We build for the freelancer sending invoice #3 and the finance lead reconciling invoice #30,000 — with the same three clicks.</p>
+            </div>
+            <div class="sip-block">
+              <span class="sip-tag">Our approach</span>
+              <h3>Compliance reviewed quarterly, shipped every two weeks.</h3>
+              <p>We pair a fast product cycle with PCI DSS Level 1 audits every quarter and a continuous penetration-testing program.</p>
+            </div>
+            <div class="sip-block">
+              <span class="sip-tag">Our promise</span>
+              <h3>Every roadmap decision answers one question.</h3>
+              <p>Does this get money into your account faster? If not, it doesn't ship this quarter.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. PULL QUOTE — MAGAZINE SPREAD -->
+<section class="section section-alt pq-mag-section">
+  <div class="container">
+    <div class="pq-mag-spread" data-aos="fade-up">
+
+      <!-- LEFT PAGE -->
+      <div class="pq-page pq-page-left">
+        <div class="pq-page-num">01</div>
+        <div class="pq-mag-tag"><span class="pq-mag-dot"></span> OUR STORY</div>
+        <h2 class="pq-mag-title">WHY WE<br>BUILT<br>STACKLY</h2>
+        <p class="pq-mag-body">
+          Three ex-agency operators, tired of chasing invoices across spreadsheets and email threads, sat down to build the billing tool they wished existed. What started as a weekend prototype now runs revenue for 24,000+ businesses across 35+ countries.
+        </p>
+        <div class="pq-mag-badge">
+          <i class="fa-solid fa-quote-left"></i>
+        </div>
+      </div>
+
+      <!-- GUTTER -->
+      <div class="pq-gutter"></div>
+
+      <!-- RIGHT PAGE -->
+      <div class="pq-page pq-page-right">
+        <div class="pq-page-num">02</div>
+
+        <div class="pq-quote-card">
+          <p>"We didn't want to build another accounting tool. We wanted to build the thing that makes accounting tools unnecessary for 90% of your week."</p>
+        </div>
+
+        <div class="pq-mag-photo">
+          <img src="assets/images/businessman-portrait.webp" alt="Rahul Verma, Co-founder and CEO">
+        </div>
+        <div class="pq-mag-caption">
+          <strong>Rahul Verma</strong>
+          <span>Co-founder &amp; CEO</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 4. STAT JOURNEY -->
+<section class="section stat-journey-section">
+  <div class="container">
+    <div class="section-head center" data-aos="fade-up">
+      <div class="eyebrow">Our journey</div>
+      <h2 class="section-tag">From founding to global scale.</h2>
+    </div>
+
+    <div class="stat-journey" data-aos="fade-up">
+      <div class="sj-line"></div>
+
+      <div class="sj-node">
+        <div class="sj-icon"><i class="fa-solid fa-flag"></i></div>
+        <strong class="sj-num" data-count="2020" data-format="year">0</strong>
+        <span class="sj-label">Founded</span>
+      </div>
+
+      <div class="sj-node">
+        <div class="sj-icon"><i class="fa-solid fa-earth-americas"></i></div>
+        <strong class="sj-num" data-count="120" data-suffix="+">0</strong>
+        <span class="sj-label">Currencies</span>
+      </div>
+
+      <div class="sj-node">
+        <div class="sj-icon"><i class="fa-solid fa-building"></i></div>
+        <strong class="sj-num" data-count="24" data-suffix="K+">0</strong>
+        <span class="sj-label">Businesses</span>
+      </div>
+
+      <div class="sj-node">
+        <div class="sj-icon"><i class="fa-solid fa-globe"></i></div>
+        <strong class="sj-num" data-count="35" data-suffix="+">0</strong>
+        <span class="sj-label">Countries</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. TIMELINE — STAIRCASE STEPPER -->
+<section class="section section-alt timeline-stair-section">
+  <div class="container">
+    <div class="section-head center" data-aos="fade-up"><div class="eyebrow">Timeline</div><h2 class="section-tag">From side tool to billing platform.</h2></div>
+
+    <div class="tl-s-wrap">
+
+      <div class="tl-s-item" data-aos="fade-up">
+        <div class="tl-s-num">01</div>
+        <div class="tl-s-line"></div>
+        <div class="tl-s-body">
+          <span class="tl-s-year">2020</span>
+          <h4>Stackly founded</h4>
+          <p>Launched as a simple invoice generator for freelance operators.</p>
+        </div>
+      </div>
+
+      <div class="tl-s-item" data-aos="fade-up" data-aos-delay="80">
+        <div class="tl-s-num">02</div>
+        <div class="tl-s-line"></div>
+        <div class="tl-s-body">
+          <span class="tl-s-year">2021</span>
+          <h4>Payment gateway added</h4>
+          <p>Card and wallet checkout built directly into every invoice.</p>
+        </div>
+      </div>
+
+      <div class="tl-s-item" data-aos="fade-up" data-aos-delay="160">
+        <div class="tl-s-num">03</div>
+        <div class="tl-s-line"></div>
+        <div class="tl-s-body">
+          <span class="tl-s-year">2023</span>
+          <h4>Recurring billing launched</h4>
+          <p>Subscription cycles, retries and dunning automated end-to-end.</p>
+        </div>
+      </div>
+
+      <div class="tl-s-item" data-aos="fade-up" data-aos-delay="240">
+        <div class="tl-s-num">04</div>
+        <div class="tl-s-line"></div>
+        <div class="tl-s-body">
+          <span class="tl-s-year">2024</span>
+          <h4>Multi-currency expansion</h4>
+          <p>Checkout expanded to 120+ currencies across 35 countries.</p>
+        </div>
+      </div>
+
+      <div class="tl-s-item tl-s-last" data-aos="fade-up" data-aos-delay="320">
+        <div class="tl-s-num">05</div>
+        <div class="tl-s-body">
+          <span class="tl-s-year">2026</span>
+          <h4>24,000+ businesses billed</h4>
+          <p>Crossed $480M processed annually across every plan.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- 6. TEAM CLUSTER -->
+<section class="section">
+  <div class="container">
+    <div class="section-head center" data-aos="fade-up"><div class="eyebrow">Leadership</div><h2 class="section-tag">The people building Stackly.</h2></div>
+    <div class="team-cluster">
+      <div class="team-orb" data-aos="fade-up"><img src="assets/images/businessman-portrait.webp" alt="Portrait of Rahul Verma"><h4>Rahul Verma</h4><span>Co-founder &amp; CEO</span></div>
+      <div class="team-orb" data-aos="fade-up" data-aos-delay="80"><img src="assets/images/confident-businesswoman-portrait.webp" alt="Portrait of Neha Chawla"><h4>Neha Chawla</h4><span>Co-founder &amp; CTO</span></div>
+      <div class="team-orb" data-aos="fade-up" data-aos-delay="160"><img src="assets/images/businesswoman-portrait-glasses.webp" alt="Portrait of Ritu Malhotra"><h4>Ritu Malhotra</h4><span>Head of Compliance</span></div>
+      <div class="team-orb" data-aos="fade-up" data-aos-delay="240"><img src="assets/images/businessman-portrait.webp" alt="Portrait of Karan Oberoi"><h4>Karan Oberoi</h4><span>Head of Product</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. VALUES — EXPANDING ACCORDION ROWS -->
+<section class="section section-alt values-accordion-section">
+  <div class="container">
+    <div class="section-head center" data-aos="fade-up"><div class="eyebrow">What we stand for</div><h2 class="section-tag">Four principles behind every release.</h2></div>
+
+    <div class="va-list" data-aos="fade-up">
+
+      <div class="va-row">
+        <span class="va-index">01</span>
+        <div class="va-icon"><i class="fa-solid fa-bolt"></i></div>
+        <h4 class="va-title">Speed to cash</h4>
+        <p class="va-desc">Every feature is judged by how much faster it gets you paid.</p>
+        <i class="fa-solid fa-arrow-right va-arrow"></i>
+      </div>
+
+      <div class="va-row">
+        <span class="va-index">02</span>
+        <div class="va-icon"><i class="fa-solid fa-eye"></i></div>
+        <h4 class="va-title">Transparent pricing</h4>
+        <p class="va-desc">Processing rates shown upfront — no surprise deductions.</p>
+        <i class="fa-solid fa-arrow-right va-arrow"></i>
+      </div>
+
+      <div class="va-row">
+        <span class="va-index">03</span>
+        <div class="va-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h4 class="va-title">Security first</h4>
+        <p class="va-desc">PCI DSS Level 1 compliance is the default, not a checkbox.</p>
+        <i class="fa-solid fa-arrow-right va-arrow"></i>
+      </div>
+
+      <div class="va-row">
+        <span class="va-index">04</span>
+        <div class="va-icon"><i class="fa-solid fa-people-group"></i></div>
+        <h4 class="va-title">Built with customers</h4>
+        <p class="va-desc">Our top feature requests come straight from support tickets.</p>
+        <i class="fa-solid fa-arrow-right va-arrow"></i>
+      </div>
+
+      <div class="va-row">
+        <span class="va-index">05</span>
+        <div class="va-icon"><i class="fa-solid fa-earth-asia"></i></div>
+        <h4 class="va-title">Global from day one</h4>
+        <p class="va-desc">Team and customers span 35+ countries.</p>
+        <i class="fa-solid fa-arrow-right va-arrow"></i>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 8. PARTNERS — STAGGERED TILT GRID -->
+<section class="section partners-tilt-section">
+  <div class="container">
+    <div class="section-head center" data-aos="fade-up"><div class="eyebrow">Works with</div><h2 class="section-tag">Every major payment network, natively.</h2></div>
+
+    <div class="pt-grid">
+      <div class="pt-card" data-aos="fade-up"><i class="fa-brands fa-cc-visa"></i><span>Visa</span></div>
+      <div class="pt-card pt-offset" data-aos="fade-up" data-aos-delay="60"><i class="fa-brands fa-cc-mastercard"></i><span>Mastercard</span></div>
+      <div class="pt-card" data-aos="fade-up" data-aos-delay="120"><i class="fa-brands fa-cc-amex"></i><span>Amex</span></div>
+      <div class="pt-card pt-offset" data-aos="fade-up" data-aos-delay="180"><i class="fa-brands fa-cc-paypal"></i><span>PayPal</span></div>
+      <div class="pt-card" data-aos="fade-up" data-aos-delay="240"><i class="fa-brands fa-google-pay"></i><span>Google Pay</span></div>
+      <div class="pt-card pt-offset" data-aos="fade-up" data-aos-delay="300"><i class="fa-brands fa-apple-pay"></i><span>Apple Pay</span></div>
+      <div class="pt-card" data-aos="fade-up" data-aos-delay="360"><i class="fa-brands fa-cc-stripe"></i><span>Stripe</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. PRESS LIST -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head center" data-aos="fade-up"><div class="eyebrow">In the press</div><h2 class="section-tag">What people are writing about us.</h2></div>
+    <div class="press-list" data-aos="fade-up">
+      <div class="press-row"><a href="404.html"><span class="p-tag">Feature</span><h4>"The billing platform that treats cash flow as real-time data"</h4><i class="fa-solid fa-arrow-right"></i></a></div>
+      <div class="press-row"><a href="404.html"><span class="p-tag">Security</span><h4>Independent audit confirms zero critical issues, third year running</h4><i class="fa-solid fa-arrow-right"></i></a></div>
+      <div class="press-row"><a href="404.html"><span class="p-tag">Interview</span><h4>Founders on building for finance teams, not just founders</h4><i class="fa-solid fa-arrow-right"></i></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. CTA — SPLIT WITH FLOATING COLLAGE -->
+<section class="section cta-collage-section">
+  <div class="container">
+    <div class="cc-card" data-aos="zoom-in">
+
+      <div class="cc-content">
+        <span class="cc-badge">Get access</span>
+        <h2 class="cc-title">Get paid faster with billing <strong>owned by you.</strong></h2>
+        <p class="cc-sub">Our product is fully dedicated to helping every business, at every stage of its billing lifecycle.</p>
+        <p class="cc-sub cc-sub-2">Feel free to create a free account and explore.</p>
+
+        <div class="cc-actions">
+          <a href="404.html" class="btn btn-primary">Get Access Free</a>
+          <span class="cc-note">No credit card required</span>
+        </div>
+      </div>
+
+      <div class="cc-media">
+        <div class="cc-blob-bg"></div>
+
+        <div class="cc-photo cc-photo-a">
+          <img src="assets/images/confident-businesswoman-portrait.webp" alt="Stackly customer">
+          <div class="cc-photo-tag"><i class="fa-solid fa-circle-check"></i> Verified business</div>
+        </div>
+
+        <div class="cc-photo cc-photo-b">
+          <img src="assets/images/businessman-portrait.webp" alt="Stackly customer">
+          <div class="cc-photo-caption">#GetPaidFaster</div>
+        </div>
+
+        <div class="cc-link-chip">
+          <i class="fa-solid fa-link"></i> stackly.app/pay/acme
+        </div>
+
+        <div class="cc-orb cc-orb-1"><i class="fa-solid fa-credit-card"></i></div>
+        <div class="cc-orb cc-orb-2"><i class="fa-solid fa-bolt"></i></div>
+        <div class="cc-orb cc-orb-3"><i class="fa-solid fa-globe"></i></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer-folk">
+  <div class="sff-stripe">
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="container">
+    <div class="sff-top">
+      <div>
+        <a href="index.html"><img src="assets/images/stackly-logo-cyan.webp" alt="Stackly logo" class="sff-logo"></a>
+        <h2>Start 14-day free<br>trial on Stackly</h2>
+      </div>
+      <div class="sff-cta-group">
+        <a href="404.html" class="sff-btn-solid">Try for free</a>
+        <a href="404.html" class="sff-btn-outline">Get a demo</a>
+        
+      </div>
+    </div>
+
+    <div class="sff-cols">
+      <div class="sff-col">
+        <h4>Company</h4>
+        <a href="index.html">Home</a>
+        <a href="story.html">Story</a>
+        <a href="platform.html">Platform</a>
+        <a href="plans.html">Plans</a>
+        <a href="reach-us.html">Contact us</a>
+      </div>
+      
+      <div class="sff-col">
+        <h4>Use cases</h4>
+        <a href="404.html">Stackly for freelancers</a>
+        <a href="404.html">Stackly for agencies</a>
+        <a href="404.html">Stackly for retail</a>
+        <a href="404.html">Stackly for finance teams</a>
+      </div>
+      <div class="sff-col">
+          <h4>Reach Us</h4>
+          <a href="404.html">MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil, Salem, Tamil Nadu 636008</a>
+          <a href="404.html">+91 9644356574</a>
+          <a href="404.html">info@stackly.com</a>
+        </div>
+        
+      
+      
+    </div>
+
+    <div class="sff-bottom">
+      <span>© 2026 Stackly Technologies.</span>
+      <div class="sff-social">
+        <a href="404.html" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="404.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="404.html" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="404.html" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="assets/js/core.js"></script>
+<script>
+  /* ---- Stat journey: count-up on scroll ---- */
+(() => {
+  const wrap = document.querySelector(".stat-journey");
+  if (!wrap) return;
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+
+      wrap.querySelectorAll(".sj-num[data-count]").forEach(numEl => {
+        const target = parseFloat(numEl.dataset.count);
+        const suffix = numEl.dataset.suffix || "";
+        const isYear = numEl.dataset.format === "year";
+        const duration = 1300;
+        const start = performance.now();
+
+        function step(now) {
+          const p = Math.min((now - start) / duration, 1);
+          const cur = Math.floor(target * p);
+          numEl.textContent = cur + suffix;
+          if (p < 1) requestAnimationFrame(step);
+          else numEl.textContent = target + suffix;
+        }
+        requestAnimationFrame(step);
+      });
+
+      io.unobserve(wrap);
+    });
+  }, { threshold: 0.4 });
+
+  io.observe(wrap);
+})();
+</script>
+<script>
+  /* ---- Vertical timeline: scroll progress fill + item reveal ---- */
+(() => {
+  const wrap = document.getElementById("tlVWrap");
+  const fill = document.getElementById("tlVFill");
+  if (!wrap || !fill) return;
+
+  function updateFill() {
+    const rect = wrap.getBoundingClientRect();
+    const vh = window.innerHeight;
+    const total = rect.height;
+    const visible = Math.min(Math.max(vh * 0.75 - rect.top, 0), total);
+    const pct = Math.min((visible / total) * 100, 100);
+    fill.style.height = pct + "%";
+  }
+
+  window.addEventListener("scroll", updateFill, { passive: true });
+  window.addEventListener("resize", updateFill);
+  updateFill();
+
+  const items = wrap.querySelectorAll(".tl-v-item");
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add("in-view");
+    });
+  }, { threshold: 0.4 });
+  items.forEach(item => io.observe(item));
+})();
+</script>
+
+</body>
+</html>
