@@ -83,7 +83,7 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:800;margin:0;color:#fff;
 .nav-links > li.active > a{color:#fff;}
 .dropdown a.active{background:rgba(59,108,255,.1);color:var(--coral);}
 .mobile-menu a.active{color:var(--coral);}
-.site-header{position:fixed;top:0;left:0;width:100%;z-index:1000;background:rgba(11,12,16,0.7);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);}
+.site-header{position:fixed;top:0;left:0;width:100%;z-index:9999;background:rgba(11,12,16,0.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);}
 .site-header .nav-inner{display:flex;align-items:center;justify-content:space-between;height:78px;}
 .brand{display:flex;align-items:center;gap:10px;}
 .brand img{width:auto;height:36px;}
@@ -195,14 +195,16 @@ body.menu-open{overflow:hidden;height:100vh;}
 }
 
 .sff-col h4{
-  font-size:14px;
+  font-size:13px;
   color:#fff;
-  font-weight:600;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.04em;
   margin-bottom:18px;
 }
 .sff-col a{
   display:block;
-  font-size:14.5px;
+  font-size:14px;
   color:var(--paper-dim);
   margin-bottom:14px;
   transition:color .25s var(--ease);

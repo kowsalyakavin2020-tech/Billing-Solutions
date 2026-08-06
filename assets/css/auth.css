@@ -126,8 +126,7 @@ body.auth-body{ min-height:100vh; margin:0; }
 .rl-pw-toggle{
   position:absolute;
   right:14px;
-  top:70%;
-  transform:translateY(-50%);
+  top:41px;
   background:none;
   border:0;
   color:#888;
@@ -144,6 +143,32 @@ body.auth-body{ min-height:100vh; margin:0; }
   align-items:center;
   margin-bottom:22px;
   font-size:13px;
+}
+
+.rl-meta-row.field-error{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px 16px;
+  outline:1px solid #ff6464;
+  border-radius:8px;
+  padding:12px 14px;
+  margin:-12px -14px 20px -14px;
+}
+.rl-meta-row.field-error .rl-check{
+  flex:0 0 auto;
+}
+.rl-meta-row.field-error a{
+  flex:0 0 auto;
+}
+.rl-meta-row.field-error .rl-error-msg{
+  display:block;
+  color:#ff8a8a;
+  font-size:12.5px;
+  width:100%;
+  margin:0;
+  order:3;
 }
 .rl-check{
   display:flex;
@@ -262,4 +287,17 @@ body.auth-body{ min-height:100vh; margin:0; }
 .rl-field.field-error select,
 .rl-field.field-error input{
   border-color:#e05a4e !important;
+}
+.rl-meta-row.field-error{
+  outline:1px solid #ff6464;
+  border-radius:8px;
+  padding:8px;
+  margin:-8px -8px 20px -8px;
+}
+.rl-meta-row.field-error .rl-error-msg{
+  display:block;
+  color:#ff8a8a;
+  font-size:12.5px;
+  margin-top:6px;
+  width:100%;
 }

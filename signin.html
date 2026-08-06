@@ -75,12 +75,13 @@
           <label for="rl-password">Password <span>*</span></label>
           <input type="password" id="rl-password" name="password" required minlength="8">
           <button type="button" class="rl-pw-toggle" data-target="rl-password"><i class="fa-solid fa-eye"></i></button>
-          <span class="rl-error-msg">Incorrect email or password.</span>
+          <span class="rl-error-msg">Password must be 8+ chars with uppercase, lowercase, number &amp; symbol.</span>
         </div>
 
-        <div class="rl-meta-row">
+        <div class="rl-meta-row rl-field" id="rememberField">
           <label class="rl-check"><input type="checkbox" id="rl-remember"> Remember me</label>
           <a href="404.html">Forgot password?</a>
+          <span class="rl-error-msg">Please check "Remember me" to continue.</span>
         </div>
 
         <button type="button" id="loginSubmitBtn" class="rl-submit"><i class="fa-solid fa-arrow-right-to-bracket"></i> Log In</button>

@@ -52,10 +52,10 @@ function safeToast(msg, type) {
   submitBtn.addEventListener("click", () => {
     clearAllErrors(form);
     let valid = true;
-
     const roleSelect = form.querySelector("#rl-role");
     const email = form.querySelector("#rl-email");
     const password = form.querySelector("#rl-password");
+    const remember = form.querySelector("#rl-remember");
 
     if (roleSelect && !roleSelect.value) {
       markError(roleSelect.closest(".rl-field"), true);
@@ -65,13 +65,22 @@ function safeToast(msg, type) {
       markError(email?.closest(".rl-field"), true);
       valid = false;
     }
-    if (!password || password.value.length < 8) {
+    const STRONG_PW_RE = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}$/;
+    if (!password || !STRONG_PW_RE.test(password.value)) {
       markError(password?.closest(".rl-field"), true);
+      valid = false;
+    }
+    if (!remember || !remember.checked) {
+      markError(document.getElementById("rememberField"), true);
       valid = false;
     }
 
     if (!valid) {
-      safeToast("Please fix the highlighted fields.", "error");
+      if (remember && !remember.checked && email && AUTH_EMAIL_RE.test(email.value.trim()) && password && STRONG_PW_RE.test(password.value)) {
+        safeToast('Please check "Remember me" to log in.', "error");
+      } else {
+        safeToast("Please fix the highlighted fields.", "error");
+      }
       return;
     }
 
@@ -102,7 +111,8 @@ function safeToast(msg, type) {
     if (roleSelect && !roleSelect.value) { markError(roleSelect.closest(".rl-field"), true); valid = false; }
     if (!name || !name.value.trim()) { markError(name?.closest(".rl-field"), true); valid = false; }
     if (!email || !AUTH_EMAIL_RE.test(email.value.trim())) { markError(email?.closest(".rl-field"), true); valid = false; }
-    if (!password || password.value.length < 8) { markError(password?.closest(".rl-field"), true); valid = false; }
+    const STRONG_PW_RE = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}$/;
+    if (!password || !STRONG_PW_RE.test(password.value)) { markError(password?.closest(".rl-field"), true); valid = false; }
     if (!confirm || confirm.value !== password.value || !confirm.value) { markError(confirm?.closest(".rl-field"), true); valid = false; }
 
     if (!valid) {

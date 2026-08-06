@@ -68,12 +68,13 @@
   box-shadow:0 20px 40px rgba(0,0,0,.35);
   transition:transform .3s var(--ease), border-color .3s var(--ease), color .3s var(--ease);
   animation:iscFloat 5s ease-in-out infinite;
+  overflow:visible;
 }
 .isc-icon:hover{ transform:scale(1.1); border-color:var(--coral); color:var(--coral); z-index:5; }
 
 .isc-p1{ top:2%;  left:22%; animation-delay:.1s; }
 .isc-p2{ top:16%; left:2%;  width:64px; height:64px; font-size:20px; animation-delay:.5s; }
-.isc-p3{ top:14%; left:44%; animation-delay:.9s; }
+.isc-p3{ top:14%; left:44%; animation-delay:.9s; overflow:visible; }
 .isc-p4{ top:0%;  left:66%; width:64px; height:64px; font-size:20px; animation-delay:1.3s; }
 .isc-p5{ top:34%; left:14%; animation-delay:.3s; }
 .isc-p6{ top:32%; left:56%; animation-delay:.7s; }
@@ -96,7 +97,7 @@
 @media (max-width:900px){
   .isc-grid{ grid-template-columns:1fr; gap:40px; }
   .isc-cluster{ height:320px; order:-1; }
-  .isc-icon{ width:56px; height:56px; font-size:18px; }
+  .isc-icon{ width:56px; height:56px; font-size:18px;overflow: visible;  }
 }
 
 /* stat cards vertical */
